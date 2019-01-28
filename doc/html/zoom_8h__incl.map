@@ -1,0 +1,19 @@
+<map id="zoom.h" name="zoom.h">
+<area shape="rect" id="node2" href="$ez-draw_8h.html" title="ez&#45;draw.h" alt="" coords="617,379,695,405"/>
+<area shape="rect" id="node14" href="$fractale_manager_8h.html" title="fractaleManager.h" alt="" coords="823,80,950,107"/>
+<area shape="rect" id="node15" href="$koch_8h.html" title="koch.h" alt="" coords="928,304,989,331"/>
+<area shape="rect" id="node17" href="$mandelbrot_8h.html" title="mandelbrot.h" alt="" coords="1123,304,1221,331"/>
+<area shape="rect" id="node23" href="$sauvegarde_8h.html" title="sauvegarde.h" alt="" coords="999,229,1099,256"/>
+<area shape="rect" id="node25" href="$menu_8h.html" title="menu.h" alt="" coords="785,155,850,181"/>
+<area shape="rect" id="node16" href="$listep_8h.html" title="listep.h" alt="" coords="932,379,996,405"/>
+<area shape="rect" id="node18" href="$cplxio_8h.html" title="cplxio.h" alt="" coords="1132,379,1199,405"/>
+<area shape="rect" id="node20" href="$cplxop_8h.html" title="cplxop.h" alt="" coords="1223,379,1294,405"/>
+<area shape="rect" id="node21" href="$image_8h.html" title="image.h" alt="" coords="1318,379,1386,405"/>
+<area shape="rect" id="node19" href="$cplx_8h.html" title="cplx.h" alt="" coords="1227,453,1285,480"/>
+<area shape="rect" id="node22" href="$pixel_8h.html" title="pixel.h" alt="" coords="1322,453,1382,480"/>
+<area shape="rect" id="node24" href="$listep__op_8h.html" title="listep_op.h" alt="" coords="1013,304,1099,331"/>
+<area shape="rect" id="node26" href="$bouton_8h.html" title="bouton.h" alt="" coords="729,229,801,256"/>
+<area shape="rect" id="node27" href="$liste_choix_8h.html" title="listeChoix.h" alt="" coords="825,229,916,256"/>
+<area shape="rect" id="node29" href="$jauge_8h.html" title="jauge.h" alt="" coords="637,229,701,256"/>
+<area shape="rect" id="node28" href="$item_option_8h.html" title="itemOption.h" alt="" coords="808,304,904,331"/>
+</map>

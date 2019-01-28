@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>My Project:  Fichier source de listep_op.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="82065865_o.jpg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">listep_op.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="listep__op_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __LPOINTOP__</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define __LPOINTOP__</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="listep_8h.html">listep.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * A COMPLETER PAR D&#39;AUTRES OPERATIONS ESTIMEES UTILES </span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * Crée un point</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * INPUT: coordonnees du point</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * OUTPUT: pointeur sur le point cree </span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * */</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<a class="code" href="struct_e_p_o_i_n_t.html">EPOINT</a> *<a class="code" href="listep__op_8h.html#abd72b3622b6d1c26f6ade8b03a4a8419">create_point</a>(<span class="keywordtype">double</span> xx, <span class="keywordtype">double</span> yy, <a class="code" href="struct_e_p_o_i_n_t.html">EPOINT</a> *<a class="code" href="struct_e_p_o_i_n_t.html#a4c92434be90f4b254fa25fa55b37fda9">next</a>);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * Initialisation avec un point</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * INPUT: coordonnees du point</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * OUTPUT: pointeur sur liste creee</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<a class="code" href="struct_e_p_o_i_n_t.html">PLISTE</a> <a class="code" href="listep__op_8h.html#ab0e8cd1034d47cd01061f96dfe1afe2a">init_liste</a>(<span class="keywordtype">double</span> xx, <span class="keywordtype">double</span> yy);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> * Insere un point apres element elt </span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> * INPUT: ptr sur element avant insertion, coordonnees du nouveau point</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> * OUTPUT: ptr sur element ajoute</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<a class="code" href="struct_e_p_o_i_n_t.html">EPOINT</a> * <a class="code" href="listep__op_8h.html#ab346f13f2941fc27f2de9f99df7f4235">insert_after</a>(<a class="code" href="struct_e_p_o_i_n_t.html">EPOINT</a> * elt, <span class="keywordtype">double</span> xx, <span class="keywordtype">double</span> yy);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"> * Supprime un point de la liste apres element elt </span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"> * INPUT: ptr sur element avant suppression</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"> * OUTPUT: ptr sur element courant avant suppression</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<a class="code" href="struct_e_p_o_i_n_t.html">EPOINT</a> * <a class="code" href="listep__op_8h.html#a80640988811b37e037575db1277d3edd">remove_after</a>(<a class="code" href="struct_e_p_o_i_n_t.html">EPOINT</a> * elt);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"> * Lecture d&#39;une liste de points depuis fichier de nom nf</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment"> * On suppose un point par ligne, avec coordonnees separees par un</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"> * espace. </span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"> * INPUT: nom fichier</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"> * OUTPUT: liste de points lus sur le fichier en entree.</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"> */</span>  </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<a class="code" href="struct_e_p_o_i_n_t.html">PLISTE</a> <a class="code" href="listep__op_8h.html#a47ec677f1e4da1c86989e34308974ae5">lire_liste</a>(<span class="keywordtype">char</span> * nf);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"> * Ecriture fichier des points de la liste.</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"> * Un point par ligne, coordonnees separees par un espace, </span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"> * RC a la fin d&#39;un point.</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"> * INPUT: nom fichier d&#39;ecriture, liste a ecrire</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"> * OUTPUT: --</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"> */</span> </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">void</span> <a class="code" href="listep__op_8h.html#ad3b78ceaae5c8ae232184bd8d803fba7">ecrire_liste</a>(<span class="keywordtype">char</span> * nf, <a class="code" href="struct_e_p_o_i_n_t.html">PLISTE</a> pl);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="listep__op_8h_html_ad3b78ceaae5c8ae232184bd8d803fba7"><div class="ttname"><a href="listep__op_8h.html#ad3b78ceaae5c8ae232184bd8d803fba7">ecrire_liste</a></div><div class="ttdeci">void ecrire_liste(char *nf, PLISTE pl)</div><div class="ttdef"><b>Definition:</b> <a href="listep__op_8c_source.html#l00128">listep_op.c:128</a></div></div>
+<div class="ttc" id="struct_e_p_o_i_n_t_html_a4c92434be90f4b254fa25fa55b37fda9"><div class="ttname"><a href="struct_e_p_o_i_n_t.html#a4c92434be90f4b254fa25fa55b37fda9">EPOINT::next</a></div><div class="ttdeci">struct EPOINT * next</div><div class="ttdef"><b>Definition:</b> <a href="listep_8h_source.html#l00010">listep.h:10</a></div></div>
+<div class="ttc" id="listep__op_8h_html_abd72b3622b6d1c26f6ade8b03a4a8419"><div class="ttname"><a href="listep__op_8h.html#abd72b3622b6d1c26f6ade8b03a4a8419">create_point</a></div><div class="ttdeci">EPOINT * create_point(double xx, double yy, EPOINT *next)</div><div class="ttdef"><b>Definition:</b> <a href="listep__op_8c_source.html#l00009">listep_op.c:9</a></div></div>
+<div class="ttc" id="listep__op_8h_html_ab346f13f2941fc27f2de9f99df7f4235"><div class="ttname"><a href="listep__op_8h.html#ab346f13f2941fc27f2de9f99df7f4235">insert_after</a></div><div class="ttdeci">EPOINT * insert_after(EPOINT *elt, double xx, double yy)</div><div class="ttdef"><b>Definition:</b> <a href="listep__op_8c_source.html#l00046">listep_op.c:46</a></div></div>
+<div class="ttc" id="listep_8h_html"><div class="ttname"><a href="listep_8h.html">listep.h</a></div></div>
+<div class="ttc" id="listep__op_8h_html_a47ec677f1e4da1c86989e34308974ae5"><div class="ttname"><a href="listep__op_8h.html#a47ec677f1e4da1c86989e34308974ae5">lire_liste</a></div><div class="ttdeci">PLISTE lire_liste(char *nf)</div><div class="ttdef"><b>Definition:</b> <a href="listep__op_8c_source.html#l00090">listep_op.c:90</a></div></div>
+<div class="ttc" id="listep__op_8h_html_ab0e8cd1034d47cd01061f96dfe1afe2a"><div class="ttname"><a href="listep__op_8h.html#ab0e8cd1034d47cd01061f96dfe1afe2a">init_liste</a></div><div class="ttdeci">PLISTE init_liste(double xx, double yy)</div><div class="ttdef"><b>Definition:</b> <a href="listep__op_8c_source.html#l00029">listep_op.c:29</a></div></div>
+<div class="ttc" id="listep__op_8h_html_a80640988811b37e037575db1277d3edd"><div class="ttname"><a href="listep__op_8h.html#a80640988811b37e037575db1277d3edd">remove_after</a></div><div class="ttdeci">EPOINT * remove_after(EPOINT *elt)</div><div class="ttdef"><b>Definition:</b> <a href="listep__op_8c_source.html#l00063">listep_op.c:63</a></div></div>
+<div class="ttc" id="struct_e_p_o_i_n_t_html"><div class="ttname"><a href="struct_e_p_o_i_n_t.html">EPOINT</a></div><div class="ttdef"><b>Definition:</b> <a href="listep_8h_source.html#l00007">listep.h:7</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Vendredi 27 Mai 2016 07:12:35 pour My Project par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>

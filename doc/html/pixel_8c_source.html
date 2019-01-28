@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>My Project:  Fichier source de pixel.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="82065865_o.jpg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">pixel.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="pixel_8c.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pixel_8h.html">pixel.h</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="pixel_8h.html#a59153ea67216dc9a93a08a15ccdbd603">   15</a></span>&#160;<a class="code" href="struct_pixel.html">Pixel</a> *<a class="code" href="pixel_8c.html#a59153ea67216dc9a93a08a15ccdbd603">creerPixel</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> r, <span class="keywordtype">int</span> v, <span class="keywordtype">int</span> b){</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="comment">//declarations</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="struct_pixel.html">Pixel</a> *monPix;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    monPix = malloc(<span class="keyword">sizeof</span>(<a class="code" href="struct_pixel.html">Pixel</a>));</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">//initialisation</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    monPix-&gt;<a class="code" href="struct_pixel.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = x;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    monPix-&gt;<a class="code" href="struct_pixel.html#a0a2f84ed7838f07779ae24c5a9086d33">y</a> = y;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    monPix-&gt;<a class="code" href="struct_pixel.html#a1bd9ee8c34a5177744bb7b2856c33610">rouge</a> = r;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    monPix-&gt;<a class="code" href="struct_pixel.html#a816a7bb71de16d574a2aac953f57f918">vert</a> = v;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    monPix-&gt;<a class="code" href="struct_pixel.html#affc4de061aea007870237c665d22177c">bleu</a> = b;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">return</span> monPix;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="ttc" id="struct_pixel_html_affc4de061aea007870237c665d22177c"><div class="ttname"><a href="struct_pixel.html#affc4de061aea007870237c665d22177c">Pixel::bleu</a></div><div class="ttdeci">int bleu</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8h_source.html#l00021">pixel.h:21</a></div></div>
+<div class="ttc" id="struct_pixel_html_a0a2f84ed7838f07779ae24c5a9086d33"><div class="ttname"><a href="struct_pixel.html#a0a2f84ed7838f07779ae24c5a9086d33">Pixel::y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8h_source.html#l00018">pixel.h:18</a></div></div>
+<div class="ttc" id="struct_pixel_html"><div class="ttname"><a href="struct_pixel.html">Pixel</a></div><div class="ttdef"><b>Definition:</b> <a href="pixel_8h_source.html#l00016">pixel.h:16</a></div></div>
+<div class="ttc" id="struct_pixel_html_a816a7bb71de16d574a2aac953f57f918"><div class="ttname"><a href="struct_pixel.html#a816a7bb71de16d574a2aac953f57f918">Pixel::vert</a></div><div class="ttdeci">int vert</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8h_source.html#l00020">pixel.h:20</a></div></div>
+<div class="ttc" id="struct_pixel_html_a6150e0515f7202e2fb518f7206ed97dc"><div class="ttname"><a href="struct_pixel.html#a6150e0515f7202e2fb518f7206ed97dc">Pixel::x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8h_source.html#l00017">pixel.h:17</a></div></div>
+<div class="ttc" id="struct_pixel_html_a1bd9ee8c34a5177744bb7b2856c33610"><div class="ttname"><a href="struct_pixel.html#a1bd9ee8c34a5177744bb7b2856c33610">Pixel::rouge</a></div><div class="ttdeci">int rouge</div><div class="ttdef"><b>Definition:</b> <a href="pixel_8h_source.html#l00019">pixel.h:19</a></div></div>
+<div class="ttc" id="pixel_8h_html"><div class="ttname"><a href="pixel_8h.html">pixel.h</a></div></div>
+<div class="ttc" id="pixel_8c_html_a59153ea67216dc9a93a08a15ccdbd603"><div class="ttname"><a href="pixel_8c.html#a59153ea67216dc9a93a08a15ccdbd603">creerPixel</a></div><div class="ttdeci">Pixel * creerPixel(int x, int y, int r, int v, int b)</div><div class="ttdoc">Intialise le pixel avec une couleur. </div><div class="ttdef"><b>Definition:</b> <a href="pixel_8c_source.html#l00015">pixel.c:15</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Vendredi 27 Mai 2016 07:12:35 pour My Project par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>

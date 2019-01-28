@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>My Project:  Fichier source de koch.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="82065865_o.jpg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">koch.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="koch_8c.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="koch_8h.html">koch.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="listep__op_8h.html">listep_op.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;math.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef M_PI</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="koch_8c.html#ae71449b1cc6e6250b91f539153a7a0d3">   12</a></span>&#160;<span class="preprocessor">#define M_PI           3.14159265358979323846</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="koch_8h.html#aa3661c6a8f783a641bfa0a96f6c3d46c">   24</a></span>&#160;<a class="code" href="struct_koch.html">Koch</a>* <a class="code" href="koch_8c.html#aa3661c6a8f783a641bfa0a96f6c3d46c">creerKoch</a>(<span class="keywordtype">double</span> x1, <span class="keywordtype">double</span> y1, <span class="keywordtype">double</span> x2, <span class="keywordtype">double</span> y2, <span class="keywordtype">int</span> animationType){</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">//declaration</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="struct_koch.html">Koch</a>* monFlocon;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="struct_e_p_o_i_n_t.html">EPOINT</a> *dernierPT, *equilateralPoint;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    monFlocon = malloc(<span class="keyword">sizeof</span>(<a class="code" href="struct_koch.html">Koch</a>));   </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    monFlocon-&gt;<a class="code" href="struct_koch.html#a3c9a1e9c34fd0014a0d40ecd489e06f1">points</a> = <a class="code" href="listep__op_8c.html#ab0e8cd1034d47cd01061f96dfe1afe2a">init_liste</a>(x1,y1);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    dernierPT = monFlocon-&gt;<a class="code" href="struct_koch.html#a3c9a1e9c34fd0014a0d40ecd489e06f1">points</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    dernierPT = <a class="code" href="listep__op_8c.html#ab346f13f2941fc27f2de9f99df7f4235">insert_after</a>(dernierPT, x2, y2);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    equilateralPoint = <a class="code" href="koch_8c.html#a7e69e932553c6a605223dcb380ac74d4">equilateral</a>(monFlocon-&gt;<a class="code" href="struct_koch.html#a3c9a1e9c34fd0014a0d40ecd489e06f1">points</a>-&gt;<a class="code" href="struct_e_p_o_i_n_t.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>, monFlocon-&gt;<a class="code" href="struct_koch.html#a3c9a1e9c34fd0014a0d40ecd489e06f1">points</a>-&gt;<a class="code" href="struct_e_p_o_i_n_t.html#ab927965981178aa1fba979a37168db2a">y</a>, dernierPT-&gt;<a class="code" href="struct_e_p_o_i_n_t.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>, dernierPT-&gt;<a class="code" href="struct_e_p_o_i_n_t.html#ab927965981178aa1fba979a37168db2a">y</a>, 60);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    dernierPT = <a class="code" href="listep__op_8c.html#ab346f13f2941fc27f2de9f99df7f4235">insert_after</a>(dernierPT, equilateralPoint-&gt;<a class="code" href="struct_e_p_o_i_n_t.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>, equilateralPoint-&gt;<a class="code" href="struct_e_p_o_i_n_t.html#ab927965981178aa1fba979a37168db2a">y</a>);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">//initialisation des attributs de flocon</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    monFlocon-&gt;<a class="code" href="struct_koch.html#a820dafc0bd885a6b486dccf44e8c79b9">ordreIteration</a> = 0;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    monFlocon-&gt;<a class="code" href="struct_koch.html#ad4d32214449d71251e5ab6223cba7b0a">ordreIterationCur</a> = 0;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    monFlocon-&gt;<a class="code" href="struct_koch.html#a9cdebc9b6ac484eefedd5603cde3d648">animation</a> = 1;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    monFlocon-&gt;<a class="code" href="struct_koch.html#ada7011a63857711ddd2a79be2804f0c5">couleurFond</a> = <a class="code" href="ez-draw_8c.html#a63faa99a33ce4c5dcc36c0f25e187231">ez_black</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    monFlocon-&gt;<a class="code" href="struct_koch.html#a8c455fa4b2924b440598c01b13bf8b02">couleurContour</a> = <a class="code" href="ez-draw_8c.html#a63faa99a33ce4c5dcc36c0f25e187231">ez_black</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    monFlocon-&gt;<a class="code" href="struct_koch.html#a429a9a203bbe3b3dc1520b0418ddb1db">nombrePoints</a> = 3;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    monFlocon-&gt;<a class="code" href="struct_koch.html#a038ab6e0f733a7d1eaf1f1b6ae7cddb8">longueurSegment</a> = monFlocon-&gt;<a class="code" href="struct_koch.html#a3c9a1e9c34fd0014a0d40ecd489e06f1">points</a>-&gt;<a class="code" href="struct_e_p_o_i_n_t.html#a4c92434be90f4b254fa25fa55b37fda9">next</a>-&gt;<a class="code" href="struct_e_p_o_i_n_t.html#af88b946fb90d5f08b5fb740c70e98c10">x</a> - monFlocon-&gt;<a class="code" href="struct_koch.html#a3c9a1e9c34fd0014a0d40ecd489e06f1">points</a>-&gt;<a class="code" href="struct_e_p_o_i_n_t.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    monFlocon-&gt;<a class="code" href="struct_koch.html#a9cdebc9b6ac484eefedd5603cde3d648">animation</a> = animationType;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> monFlocon;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="koch_8h.html#a7e69e932553c6a605223dcb380ac74d4">   62</a></span>&#160;<a class="code" href="struct_e_p_o_i_n_t.html">EPOINT</a>* <a class="code" href="koch_8c.html#a7e69e932553c6a605223dcb380ac74d4">equilateral</a>(<span class="keywordtype">double</span> x1, <span class="keywordtype">double</span> y1, <span class="keywordtype">double</span> x2, <span class="keywordtype">double</span> y2, <span class="keywordtype">double</span> degre){</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">double</span> xtmp, ytmp, c60, s60, dx, dy;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    c60 = cos(degre * (<a class="code" href="koch_8c.html#ae71449b1cc6e6250b91f539153a7a0d3">M_PI</a> / 180.0));</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    s60 = sin(degre * (<a class="code" href="koch_8c.html#ae71449b1cc6e6250b91f539153a7a0d3">M_PI</a> / 180.0));  </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    dx = x2-x1;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    dy = y2-y1;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    xtmp = c60 * dx - s60 * dy + x1;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    ytmp = s60 * dx + c60 * dy + y1;    </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="listep__op_8c.html#abd72b3622b6d1c26f6ade8b03a4a8419">create_point</a>(xtmp, ytmp, NULL);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="koch_8h.html#aa9df11453dffe3ce9ddca71ebe5c6bc8">   81</a></span>&#160;<a class="code" href="struct_e_p_o_i_n_t.html">EPOINT</a>* <a class="code" href="koch_8c.html#aa9df11453dffe3ce9ddca71ebe5c6bc8">tiers</a>(<span class="keywordtype">double</span> x1, <span class="keywordtype">double</span> y1, <span class="keywordtype">double</span> x2, <span class="keywordtype">double</span> y2, <span class="keywordtype">int</span> t){</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">double</span> xtmp=0, ytmp=0;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">if</span>(t==1){</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        xtmp = x1 + (x2 - x1)/3;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        ytmp = y1 + (y2 - y1)/3;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(t==2){</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        xtmp = x1 + 2*(x2 - x1)/3;          </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        ytmp = y1 + 2*(y2 - y1)/3;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="listep__op_8c.html#abd72b3622b6d1c26f6ade8b03a4a8419">create_point</a>(xtmp, ytmp, NULL);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="koch_8h.html#a3915015e9813b6e2d276ece11332a611">  104</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="koch_8c.html#a3915015e9813b6e2d276ece11332a611">triangleSegment</a>(<a class="code" href="struct_koch.html">Koch</a>* <span class="keyword">this</span>, <a class="code" href="struct_e_p_o_i_n_t.html">EPOINT</a>* pointCourant, <a class="code" href="struct_e_p_o_i_n_t.html">EPOINT</a>* pointSuivant, <a class="code" href="struct_e_p_o_i_n_t.html">EPOINT</a>* pointTier1, <a class="code" href="struct_e_p_o_i_n_t.html">EPOINT</a>* pointTier2, <a class="code" href="struct_e_p_o_i_n_t.html">EPOINT</a>* pointEquilateral){</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="comment">//mise en place point premier tier</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="comment">//pointMilieu = milieu(pointCourant-&gt;x, pointCourant-&gt;y, pointSuivant-&gt;x, pointSuivant-&gt;y);</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    pointTier1 = <a class="code" href="koch_8c.html#aa9df11453dffe3ce9ddca71ebe5c6bc8">tiers</a>(pointCourant-&gt;<a class="code" href="struct_e_p_o_i_n_t.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>, pointCourant-&gt;<a class="code" href="struct_e_p_o_i_n_t.html#ab927965981178aa1fba979a37168db2a">y</a>, pointSuivant-&gt;<a class="code" href="struct_e_p_o_i_n_t.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>, pointSuivant-&gt;<a class="code" href="struct_e_p_o_i_n_t.html#ab927965981178aa1fba979a37168db2a">y</a>, 1);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    pointTier1 = <a class="code" href="listep__op_8c.html#ab346f13f2941fc27f2de9f99df7f4235">insert_after</a>(pointCourant, pointTier1-&gt;<a class="code" href="struct_e_p_o_i_n_t.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>, pointTier1-&gt;<a class="code" href="struct_e_p_o_i_n_t.html#ab927965981178aa1fba979a37168db2a">y</a>);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    this-&gt;nombrePoints++;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="comment">//mise en place point second tier</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    pointTier2 = <a class="code" href="koch_8c.html#aa9df11453dffe3ce9ddca71ebe5c6bc8">tiers</a>(pointCourant-&gt;<a class="code" href="struct_e_p_o_i_n_t.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>, pointCourant-&gt;<a class="code" href="struct_e_p_o_i_n_t.html#ab927965981178aa1fba979a37168db2a">y</a>, pointSuivant-&gt;<a class="code" href="struct_e_p_o_i_n_t.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>, pointSuivant-&gt;<a class="code" href="struct_e_p_o_i_n_t.html#ab927965981178aa1fba979a37168db2a">y</a>, 2);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    pointTier2 = <a class="code" href="listep__op_8c.html#ab346f13f2941fc27f2de9f99df7f4235">insert_after</a>(pointTier1, pointTier2-&gt;<a class="code" href="struct_e_p_o_i_n_t.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>, pointTier2-&gt;<a class="code" href="struct_e_p_o_i_n_t.html#ab927965981178aa1fba979a37168db2a">y</a>);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    this-&gt;nombrePoints++;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="comment">//mise en place point formation equilateral</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    pointEquilateral = <a class="code" href="koch_8c.html#a7e69e932553c6a605223dcb380ac74d4">equilateral</a>(pointTier1-&gt;<a class="code" href="struct_e_p_o_i_n_t.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>, pointTier1-&gt;<a class="code" href="struct_e_p_o_i_n_t.html#ab927965981178aa1fba979a37168db2a">y</a>, pointTier2-&gt;<a class="code" href="struct_e_p_o_i_n_t.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>, pointTier2-&gt;<a class="code" href="struct_e_p_o_i_n_t.html#ab927965981178aa1fba979a37168db2a">y</a>, -60);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    pointEquilateral = <a class="code" href="listep__op_8c.html#ab346f13f2941fc27f2de9f99df7f4235">insert_after</a>(pointTier1, pointEquilateral-&gt;<a class="code" href="struct_e_p_o_i_n_t.html#af88b946fb90d5f08b5fb740c70e98c10">x</a>, pointEquilateral-&gt;<a class="code" href="struct_e_p_o_i_n_t.html#ab927965981178aa1fba979a37168db2a">y</a>);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    this-&gt;nombrePoints++;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="koch_8h.html#afc1e9b738120d6a7c43211040a94e1ff">  128</a></span>&#160;<a class="code" href="struct_koch.html">Koch</a>* <a class="code" href="koch_8c.html#afc1e9b738120d6a7c43211040a94e1ff">developperKoch</a>(<a class="code" href="struct_koch.html">Koch</a>* <span class="keyword">this</span>){</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="comment">//Declarations</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <a class="code" href="struct_e_p_o_i_n_t.html">EPOINT</a> *pointCourant, *pointSuivant, *pointTier1, *pointTier2, *pointEquilateral;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordtype">int</span> continuer;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="comment">//initialisations</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    pointCourant = pointSuivant = pointTier1 = pointTier2 = pointEquilateral = NULL;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    pointCourant = this-&gt;points;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    pointSuivant = pointCourant-&gt;<a class="code" href="struct_e_p_o_i_n_t.html#a4c92434be90f4b254fa25fa55b37fda9">next</a>;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    continuer = 1;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="comment">//parcourt des points du flocon</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordflow">while</span>(continuer == 1){</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <a class="code" href="koch_8c.html#a3915015e9813b6e2d276ece11332a611">triangleSegment</a>(<span class="keyword">this</span>, pointCourant, pointSuivant, pointTier1, pointTier2, pointEquilateral);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="comment">//repositionnement sur le segment suivant</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keywordflow">if</span>(pointSuivant-&gt;<a class="code" href="struct_e_p_o_i_n_t.html#a4c92434be90f4b254fa25fa55b37fda9">next</a> == NULL){</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            pointCourant = pointSuivant;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            pointSuivant = this-&gt;points;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <a class="code" href="koch_8c.html#a3915015e9813b6e2d276ece11332a611">triangleSegment</a>(<span class="keyword">this</span>, pointCourant, pointSuivant, pointTier1, pointTier2, pointEquilateral);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            continuer=0;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            pointCourant = pointSuivant;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            pointSuivant = pointSuivant-&gt;<a class="code" href="struct_e_p_o_i_n_t.html#a4c92434be90f4b254fa25fa55b37fda9">next</a>;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        }   </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    }</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    this-&gt;ordreIterationCur++;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;}</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="koch_8h.html#aaf52281d9297f4944fe738ab10ae6f9f">  165</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="koch_8c.html#aaf52281d9297f4944fe738ab10ae6f9f">setCouleurContour</a>(<a class="code" href="struct_koch.html">Koch</a>* <span class="keyword">this</span>, <a class="code" href="ez-draw_8h.html#a55eda5e134b62926942cef0bcc022063">Ez_uint32</a> couleur){</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="comment">//test sur les couleurs</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    this-&gt;couleurContour = couleur;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;}</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="koch_8h.html#abc530daf95b5f8dec7ed9a475f4cf2b8">  175</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="koch_8c.html#abc530daf95b5f8dec7ed9a475f4cf2b8">setCouleurFond</a>(<a class="code" href="struct_koch.html">Koch</a>* <span class="keyword">this</span>, <a class="code" href="ez-draw_8h.html#a55eda5e134b62926942cef0bcc022063">Ez_uint32</a> couleur){</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="comment">//test sur les couleurs</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    this-&gt;couleurFond = couleur;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;}</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno"><a class="line" href="koch_8h.html#a3e4976de85bb0add011020a68edf2a6f">  185</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="koch_8c.html#a3e4976de85bb0add011020a68edf2a6f">setIteration</a>(<a class="code" href="struct_koch.html">Koch</a>* <span class="keyword">this</span>,<span class="keywordtype">int</span> iteration){</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    this-&gt;ordreIteration = iteration;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;}</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00194"></a><span class="lineno"><a class="line" href="koch_8h.html#a4666d6a9f196dca8c0ce7a521a44802d">  194</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="koch_8c.html#a4666d6a9f196dca8c0ce7a521a44802d">setAnimation</a>(<a class="code" href="struct_koch.html">Koch</a>* <span class="keyword">this</span>,<span class="keywordtype">int</span> animation){</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    this-&gt;animation = animation;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;}</div>
+<div class="ttc" id="koch_8c_html_afc1e9b738120d6a7c43211040a94e1ff"><div class="ttname"><a href="koch_8c.html#afc1e9b738120d6a7c43211040a94e1ff">developperKoch</a></div><div class="ttdeci">Koch * developperKoch(Koch *this)</div><div class="ttdoc">Developpe le flocon une seule fois. </div><div class="ttdef"><b>Definition:</b> <a href="koch_8c_source.html#l00128">koch.c:128</a></div></div>
+<div class="ttc" id="koch_8h_html"><div class="ttname"><a href="koch_8h.html">koch.h</a></div></div>
+<div class="ttc" id="struct_e_p_o_i_n_t_html_a4c92434be90f4b254fa25fa55b37fda9"><div class="ttname"><a href="struct_e_p_o_i_n_t.html#a4c92434be90f4b254fa25fa55b37fda9">EPOINT::next</a></div><div class="ttdeci">struct EPOINT * next</div><div class="ttdef"><b>Definition:</b> <a href="listep_8h_source.html#l00010">listep.h:10</a></div></div>
+<div class="ttc" id="struct_koch_html_a8c455fa4b2924b440598c01b13bf8b02"><div class="ttname"><a href="struct_koch.html#a8c455fa4b2924b440598c01b13bf8b02">Koch::couleurContour</a></div><div class="ttdeci">Ez_uint32 couleurContour</div><div class="ttdef"><b>Definition:</b> <a href="koch_8h_source.html#l00025">koch.h:25</a></div></div>
+<div class="ttc" id="struct_koch_html_a820dafc0bd885a6b486dccf44e8c79b9"><div class="ttname"><a href="struct_koch.html#a820dafc0bd885a6b486dccf44e8c79b9">Koch::ordreIteration</a></div><div class="ttdeci">int ordreIteration</div><div class="ttdef"><b>Definition:</b> <a href="koch_8h_source.html#l00021">koch.h:21</a></div></div>
+<div class="ttc" id="koch_8c_html_a3915015e9813b6e2d276ece11332a611"><div class="ttname"><a href="koch_8c.html#a3915015e9813b6e2d276ece11332a611">triangleSegment</a></div><div class="ttdeci">void triangleSegment(Koch *this, EPOINT *pointCourant, EPOINT *pointSuivant, EPOINT *pointTier1, EPOINT *pointTier2, EPOINT *pointEquilateral)</div><div class="ttdoc">Developpe le triangle equilateral d&#39;un segment. </div><div class="ttdef"><b>Definition:</b> <a href="koch_8c_source.html#l00104">koch.c:104</a></div></div>
+<div class="ttc" id="koch_8c_html_ae71449b1cc6e6250b91f539153a7a0d3"><div class="ttname"><a href="koch_8c.html#ae71449b1cc6e6250b91f539153a7a0d3">M_PI</a></div><div class="ttdeci">#define M_PI</div><div class="ttdef"><b>Definition:</b> <a href="koch_8c_source.html#l00012">koch.c:12</a></div></div>
+<div class="ttc" id="struct_koch_html_a9cdebc9b6ac484eefedd5603cde3d648"><div class="ttname"><a href="struct_koch.html#a9cdebc9b6ac484eefedd5603cde3d648">Koch::animation</a></div><div class="ttdeci">int animation</div><div class="ttdef"><b>Definition:</b> <a href="koch_8h_source.html#l00023">koch.h:23</a></div></div>
+<div class="ttc" id="struct_koch_html_ada7011a63857711ddd2a79be2804f0c5"><div class="ttname"><a href="struct_koch.html#ada7011a63857711ddd2a79be2804f0c5">Koch::couleurFond</a></div><div class="ttdeci">Ez_uint32 couleurFond</div><div class="ttdef"><b>Definition:</b> <a href="koch_8h_source.html#l00024">koch.h:24</a></div></div>
+<div class="ttc" id="struct_koch_html_a3c9a1e9c34fd0014a0d40ecd489e06f1"><div class="ttname"><a href="struct_koch.html#a3c9a1e9c34fd0014a0d40ecd489e06f1">Koch::points</a></div><div class="ttdeci">PLISTE points</div><div class="ttdef"><b>Definition:</b> <a href="koch_8h_source.html#l00020">koch.h:20</a></div></div>
+<div class="ttc" id="koch_8c_html_a4666d6a9f196dca8c0ce7a521a44802d"><div class="ttname"><a href="koch_8c.html#a4666d6a9f196dca8c0ce7a521a44802d">setAnimation</a></div><div class="ttdeci">void setAnimation(Koch *this, int animation)</div><div class="ttdoc">Mutateur qui modifie le type d&#39;animation du flocon. </div><div class="ttdef"><b>Definition:</b> <a href="koch_8c_source.html#l00194">koch.c:194</a></div></div>
+<div class="ttc" id="koch_8c_html_aa3661c6a8f783a641bfa0a96f6c3d46c"><div class="ttname"><a href="koch_8c.html#aa3661c6a8f783a641bfa0a96f6c3d46c">creerKoch</a></div><div class="ttdeci">Koch * creerKoch(double x1, double y1, double x2, double y2, int animationType)</div><div class="ttdoc">Intialise le Flocon de Koch. </div><div class="ttdef"><b>Definition:</b> <a href="koch_8c_source.html#l00024">koch.c:24</a></div></div>
+<div class="ttc" id="struct_e_p_o_i_n_t_html_af88b946fb90d5f08b5fb740c70e98c10"><div class="ttname"><a href="struct_e_p_o_i_n_t.html#af88b946fb90d5f08b5fb740c70e98c10">EPOINT::x</a></div><div class="ttdeci">double x</div><div class="ttdef"><b>Definition:</b> <a href="listep_8h_source.html#l00008">listep.h:8</a></div></div>
+<div class="ttc" id="koch_8c_html_aaf52281d9297f4944fe738ab10ae6f9f"><div class="ttname"><a href="koch_8c.html#aaf52281d9297f4944fe738ab10ae6f9f">setCouleurContour</a></div><div class="ttdeci">void setCouleurContour(Koch *this, Ez_uint32 couleur)</div><div class="ttdoc">Mutateur qui modifie la couleur de contour du flocon. </div><div class="ttdef"><b>Definition:</b> <a href="koch_8c_source.html#l00165">koch.c:165</a></div></div>
+<div class="ttc" id="struct_koch_html_ad4d32214449d71251e5ab6223cba7b0a"><div class="ttname"><a href="struct_koch.html#ad4d32214449d71251e5ab6223cba7b0a">Koch::ordreIterationCur</a></div><div class="ttdeci">int ordreIterationCur</div><div class="ttdef"><b>Definition:</b> <a href="koch_8h_source.html#l00022">koch.h:22</a></div></div>
+<div class="ttc" id="struct_koch_html"><div class="ttname"><a href="struct_koch.html">Koch</a></div><div class="ttdef"><b>Definition:</b> <a href="koch_8h_source.html#l00019">koch.h:19</a></div></div>
+<div class="ttc" id="ez-draw_8c_html_a63faa99a33ce4c5dcc36c0f25e187231"><div class="ttname"><a href="ez-draw_8c.html#a63faa99a33ce4c5dcc36c0f25e187231">ez_black</a></div><div class="ttdeci">Ez_uint32 ez_black</div><div class="ttdef"><b>Definition:</b> <a href="ez-draw_8c_source.html#l00023">ez-draw.c:23</a></div></div>
+<div class="ttc" id="struct_e_p_o_i_n_t_html_ab927965981178aa1fba979a37168db2a"><div class="ttname"><a href="struct_e_p_o_i_n_t.html#ab927965981178aa1fba979a37168db2a">EPOINT::y</a></div><div class="ttdeci">double y</div><div class="ttdef"><b>Definition:</b> <a href="listep_8h_source.html#l00009">listep.h:9</a></div></div>
+<div class="ttc" id="listep__op_8h_html"><div class="ttname"><a href="listep__op_8h.html">listep_op.h</a></div></div>
+<div class="ttc" id="koch_8c_html_aa9df11453dffe3ce9ddca71ebe5c6bc8"><div class="ttname"><a href="koch_8c.html#aa9df11453dffe3ce9ddca71ebe5c6bc8">tiers</a></div><div class="ttdeci">EPOINT * tiers(double x1, double y1, double x2, double y2, int t)</div><div class="ttdoc">Calcule le premier ou le second tiers du segment. </div><div class="ttdef"><b>Definition:</b> <a href="koch_8c_source.html#l00081">koch.c:81</a></div></div>
+<div class="ttc" id="listep__op_8c_html_ab346f13f2941fc27f2de9f99df7f4235"><div class="ttname"><a href="listep__op_8c.html#ab346f13f2941fc27f2de9f99df7f4235">insert_after</a></div><div class="ttdeci">EPOINT * insert_after(EPOINT *elt, double xx, double yy)</div><div class="ttdef"><b>Definition:</b> <a href="listep__op_8c_source.html#l00046">listep_op.c:46</a></div></div>
+<div class="ttc" id="ez-draw_8h_html_a55eda5e134b62926942cef0bcc022063"><div class="ttname"><a href="ez-draw_8h.html#a55eda5e134b62926942cef0bcc022063">Ez_uint32</a></div><div class="ttdeci">unsigned int Ez_uint32</div><div class="ttdef"><b>Definition:</b> <a href="ez-draw_8h_source.html#l00063">ez-draw.h:63</a></div></div>
+<div class="ttc" id="koch_8c_html_a7e69e932553c6a605223dcb380ac74d4"><div class="ttname"><a href="koch_8c.html#a7e69e932553c6a605223dcb380ac74d4">equilateral</a></div><div class="ttdeci">EPOINT * equilateral(double x1, double y1, double x2, double y2, double degre)</div><div class="ttdoc">Ajoute le point qui forme le triangle equilateral. </div><div class="ttdef"><b>Definition:</b> <a href="koch_8c_source.html#l00062">koch.c:62</a></div></div>
+<div class="ttc" id="koch_8c_html_a3e4976de85bb0add011020a68edf2a6f"><div class="ttname"><a href="koch_8c.html#a3e4976de85bb0add011020a68edf2a6f">setIteration</a></div><div class="ttdeci">void setIteration(Koch *this, int iteration)</div><div class="ttdoc">Mutateur qui modifie le nombre d&#39;iteration du flocon. </div><div class="ttdef"><b>Definition:</b> <a href="koch_8c_source.html#l00185">koch.c:185</a></div></div>
+<div class="ttc" id="struct_koch_html_a429a9a203bbe3b3dc1520b0418ddb1db"><div class="ttname"><a href="struct_koch.html#a429a9a203bbe3b3dc1520b0418ddb1db">Koch::nombrePoints</a></div><div class="ttdeci">int nombrePoints</div><div class="ttdef"><b>Definition:</b> <a href="koch_8h_source.html#l00026">koch.h:26</a></div></div>
+<div class="ttc" id="listep__op_8c_html_ab0e8cd1034d47cd01061f96dfe1afe2a"><div class="ttname"><a href="listep__op_8c.html#ab0e8cd1034d47cd01061f96dfe1afe2a">init_liste</a></div><div class="ttdeci">PLISTE init_liste(double xx, double yy)</div><div class="ttdef"><b>Definition:</b> <a href="listep__op_8c_source.html#l00029">listep_op.c:29</a></div></div>
+<div class="ttc" id="struct_koch_html_a038ab6e0f733a7d1eaf1f1b6ae7cddb8"><div class="ttname"><a href="struct_koch.html#a038ab6e0f733a7d1eaf1f1b6ae7cddb8">Koch::longueurSegment</a></div><div class="ttdeci">double longueurSegment</div><div class="ttdef"><b>Definition:</b> <a href="koch_8h_source.html#l00027">koch.h:27</a></div></div>
+<div class="ttc" id="listep__op_8c_html_abd72b3622b6d1c26f6ade8b03a4a8419"><div class="ttname"><a href="listep__op_8c.html#abd72b3622b6d1c26f6ade8b03a4a8419">create_point</a></div><div class="ttdeci">EPOINT * create_point(double xx, double yy, EPOINT *next)</div><div class="ttdef"><b>Definition:</b> <a href="listep__op_8c_source.html#l00009">listep_op.c:9</a></div></div>
+<div class="ttc" id="koch_8c_html_abc530daf95b5f8dec7ed9a475f4cf2b8"><div class="ttname"><a href="koch_8c.html#abc530daf95b5f8dec7ed9a475f4cf2b8">setCouleurFond</a></div><div class="ttdeci">void setCouleurFond(Koch *this, Ez_uint32 couleur)</div><div class="ttdoc">Mutateur qui modifie la couleur de fond du flocon. </div><div class="ttdef"><b>Definition:</b> <a href="koch_8c_source.html#l00175">koch.c:175</a></div></div>
+<div class="ttc" id="struct_e_p_o_i_n_t_html"><div class="ttname"><a href="struct_e_p_o_i_n_t.html">EPOINT</a></div><div class="ttdef"><b>Definition:</b> <a href="listep_8h_source.html#l00007">listep.h:7</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Vendredi 27 Mai 2016 07:12:35 pour My Project par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>

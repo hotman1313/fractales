@@ -1,0 +1,10 @@
+<map id="listeChoix.h" name="listeChoix.h">
+<area shape="rect" id="node2" href="$menu_8h.html" title="menu.h" alt="" coords="216,80,281,107"/>
+<area shape="rect" id="node9" href="$liste_choix_8c.html" title="listeChoix.c" alt="" coords="306,80,397,107"/>
+<area shape="rect" id="node3" href="$fractale_manager_8h.html" title="fractaleManager.h" alt="" coords="125,155,252,181"/>
+<area shape="rect" id="node8" href="$menu_8c.html" title="menu.c" alt="" coords="276,155,341,181"/>
+<area shape="rect" id="node4" href="$fractale_manager_8c.html" title="fractaleManager.c" alt="" coords="5,304,132,331"/>
+<area shape="rect" id="node5" href="$zoom_8h.html" title="zoom.h" alt="" coords="156,229,221,256"/>
+<area shape="rect" id="node6" href="$main_8c.html" title="main.c" alt="" coords="246,304,307,331"/>
+<area shape="rect" id="node7" href="$zoom_8c.html" title="zoom.c" alt="" coords="156,304,221,331"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="Menu" name="Menu">
+<area shape="rect" id="node2" href="$struct_liste_choix.html" title="ListeChoix" alt="" coords="7,95,91,121"/>
+<area shape="rect" id="node3" href="$struct_item_option.html" title="ItemOption" alt="" coords="5,5,92,32"/>
+<area shape="rect" id="node4" href="$struct_jauge.html" title="Jauge" alt="" coords="120,95,177,121"/>
+<area shape="rect" id="node5" href="$struct_bouton.html" title="Bouton" alt="" coords="201,95,264,121"/>
+</map>

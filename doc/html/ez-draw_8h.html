@@ -1,0 +1,1790 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>My Project: Référence du fichier ez-draw.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="82065865_o.jpg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Structures de données</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Définitions de type</a> &#124;
+<a href="#enum-members">Énumérations</a> &#124;
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier ez-draw.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;stdarg.h&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+<code>#include &lt;sys/time.h&gt;</code><br />
+<code>#include &lt;X11/Xlib.h&gt;</code><br />
+<code>#include &lt;X11/Xutil.h&gt;</code><br />
+<code>#include &lt;X11/Xresource.h&gt;</code><br />
+<code>#include &lt;X11/keysym.h&gt;</code><br />
+<code>#include &lt;X11/extensions/Xdbe.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de ez-draw.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="ez-draw_8h__incl.png" border="0" usemap="#ez-draw_8h" alt=""/></div>
+<map name="ez-draw_8h" id="ez-draw_8h">
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier :</div>
+<div class="dyncontent">
+<div class="center"><img src="ez-draw_8h__dep__incl.png" border="0" usemap="#ez-draw_8hdep" alt=""/></div>
+<map name="ez-draw_8hdep" id="ez-draw_8hdep">
+<area shape="rect" id="node2" href="bouton_8h.html" title="bouton.h" alt="" coords="23,80,95,107"/><area shape="rect" id="node5" href="fractale_manager_8h.html" title="fractaleManager.h" alt="" coords="390,304,517,331"/><area shape="rect" id="node7" href="zoom_8h.html" title="zoom.h" alt="" coords="517,379,582,405"/><area shape="rect" id="node11" href="ez-draw_8c.html" title="ez&#45;draw.c" alt="" coords="717,80,795,107"/><area shape="rect" id="node12" href="koch_8h.html" title="koch.h" alt="" coords="451,155,512,181"/><area shape="rect" id="node16" href="item_option_8h.html" title="itemOption.h" alt="" coords="233,80,329,107"/><area shape="rect" id="node3" href="bouton_8c.html" title="bouton.c" alt="" coords="23,155,95,181"/><area shape="rect" id="node4" href="menu_8h.html" title="menu.h" alt="" coords="149,229,214,256"/><area shape="rect" id="node10" href="menu_8c.html" title="menu.c" alt="" coords="149,304,214,331"/><area shape="rect" id="node6" href="fractale_manager_8c.html" title="fractaleManager.c" alt="" coords="365,453,491,480"/><area shape="rect" id="node8" href="main_8c.html" title="main.c" alt="" coords="516,453,577,480"/><area shape="rect" id="node9" href="zoom_8c.html" title="zoom.c" alt="" coords="602,453,667,480"/><area shape="rect" id="node13" href="sauvegarde_8h.html" title="sauvegarde.h" alt="" coords="541,229,641,256"/><area shape="rect" id="node15" href="koch_8c.html" title="koch.c" alt="" coords="404,229,465,256"/><area shape="rect" id="node14" href="sauvegarde_8c.html" title="sauvegarde.c" alt="" coords="541,304,641,331"/><area shape="rect" id="node17" href="liste_choix_8h.html" title="listeChoix.h" alt="" coords="239,155,329,181"/><area shape="rect" id="node19" href="item_option_8c.html" title="itemOption.c" alt="" coords="119,155,215,181"/><area shape="rect" id="node18" href="liste_choix_8c.html" title="listeChoix.c" alt="" coords="239,229,329,256"/></map>
+</div>
+</div>
+<p><a href="ez-draw_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Structures de données</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ez__channel.html">Ez_channel</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ez___true_color.html">Ez_TrueColor</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ez___pseudo_color.html">Ez_PseudoColor</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ez__timer.html">Ez_timer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ez___x.html">Ez_X</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ez__event.html">Ez_event</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ez__win__info.html">Ez_win_info</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a4e6f3c945f1edd28e8f70401548c854b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#a4e6f3c945f1edd28e8f70401548c854b">EZ_BASE_XLIB</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a4e6f3c945f1edd28e8f70401548c854b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7d8b778802ee85feebdeb2f048335a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#aa7d8b778802ee85feebdeb2f048335a6">EZ_FONT_MAX</a>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:aa7d8b778802ee85feebdeb2f048335a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4ba09a0328a5f4c5786e4e936f21995"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#ae4ba09a0328a5f4c5786e4e936f21995">EZ_WIN_MAX</a>&#160;&#160;&#160;1024</td></tr>
+<tr class="separator:ae4ba09a0328a5f4c5786e4e936f21995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a2208666c07190f8d47157b0f194aa6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#a5a2208666c07190f8d47157b0f194aa6">EZ_ROUND</a>(x)&#160;&#160;&#160;((x)&lt;0 ? (int)((x)-0.5) : (int)((x)+0.5))</td></tr>
+<tr class="separator:a5a2208666c07190f8d47157b0f194aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a319f933f4c8101e13877e4401250bca9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#a319f933f4c8101e13877e4401250bca9">EZ_TIMER_MAX</a>&#160;&#160;&#160;100</td></tr>
+<tr class="separator:a319f933f4c8101e13877e4401250bca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Définitions de type</h2></td></tr>
+<tr class="memitem:a69aa9e57b7b195a7fa9f88d62a466014"><td class="memItemLeft" align="right" valign="top">typedef signed char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#a69aa9e57b7b195a7fa9f88d62a466014">Ez_int8</a></td></tr>
+<tr class="separator:a69aa9e57b7b195a7fa9f88d62a466014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7178a4c9ce9140f232ce4e4545cd6177"><td class="memItemLeft" align="right" valign="top">typedef unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#a7178a4c9ce9140f232ce4e4545cd6177">Ez_uint8</a></td></tr>
+<tr class="separator:a7178a4c9ce9140f232ce4e4545cd6177"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62118f08b0017c090df6bc21a2bf38ee"><td class="memItemLeft" align="right" valign="top">typedef unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#a62118f08b0017c090df6bc21a2bf38ee">Ez_uint16</a></td></tr>
+<tr class="separator:a62118f08b0017c090df6bc21a2bf38ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6921d0bb91b6b6113e1104900d6f2a2b"><td class="memItemLeft" align="right" valign="top">typedef signed short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#a6921d0bb91b6b6113e1104900d6f2a2b">Ez_int16</a></td></tr>
+<tr class="separator:a6921d0bb91b6b6113e1104900d6f2a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55eda5e134b62926942cef0bcc022063"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#a55eda5e134b62926942cef0bcc022063">Ez_uint32</a></td></tr>
+<tr class="separator:a55eda5e134b62926942cef0bcc022063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61a93149c609b66a7848cfa8fbe31a3c"><td class="memItemLeft" align="right" valign="top">typedef signed int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#a61a93149c609b66a7848cfa8fbe31a3c">Ez_int32</a></td></tr>
+<tr class="separator:a61a93149c609b66a7848cfa8fbe31a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbac932ce4c32d1da99811bd99fb3709"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#adbac932ce4c32d1da99811bd99fb3709">Ez_uint</a></td></tr>
+<tr class="separator:adbac932ce4c32d1da99811bd99fb3709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3d2691b1c889aecded4aaa148a045b9"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="ez-draw_8h.html#a7178a4c9ce9140f232ce4e4545cd6177">Ez_uint8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#ad3d2691b1c889aecded4aaa148a045b9">Ez_validate_uint32</a> [sizeof(<a class="el" href="ez-draw_8h.html#a55eda5e134b62926942cef0bcc022063">Ez_uint32</a>)==4?1:-1]</td></tr>
+<tr class="separator:ad3d2691b1c889aecded4aaa148a045b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72f9ccbcb00f67f8fd4644514c50de34"><td class="memItemLeft" align="right" valign="top">typedef Window&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a></td></tr>
+<tr class="separator:a72f9ccbcb00f67f8fd4644514c50de34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa79a0a1f889ba3434633bce252eedd7"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#aaa79a0a1f889ba3434633bce252eedd7">Ez_func</a> )(<a class="el" href="struct_ez__event.html">Ez_event</a> *ev)</td></tr>
+<tr class="separator:aaa79a0a1f889ba3434633bce252eedd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Énumérations</h2></td></tr>
+<tr class="memitem:ad579ac8e9bfa562f6f652462ccc4f45d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#ad579ac8e9bfa562f6f652462ccc4f45d">Ez_Align</a> { <br />
+&#160;&#160;<a class="el" href="ez-draw_8h.html#ad579ac8e9bfa562f6f652462ccc4f45dad3cb07e30cb20add61c0f4c5fa37be71">EZ_AA</a> = 183200, 
+<a class="el" href="ez-draw_8h.html#ad579ac8e9bfa562f6f652462ccc4f45da3c9db5ecb68093619650ca4e6df6efff">EZ_TL</a>, 
+<a class="el" href="ez-draw_8h.html#ad579ac8e9bfa562f6f652462ccc4f45dac9a0b270fcc4177ee50af2dea1cc9000">EZ_TC</a>, 
+<a class="el" href="ez-draw_8h.html#ad579ac8e9bfa562f6f652462ccc4f45dad9984e5822db8b63f0cce2a553eb2b25">EZ_TR</a>, 
+<br />
+&#160;&#160;<a class="el" href="ez-draw_8h.html#ad579ac8e9bfa562f6f652462ccc4f45da37c6986d24eb7d1f64df51f33e9ec6a9">EZ_ML</a>, 
+<a class="el" href="ez-draw_8h.html#ad579ac8e9bfa562f6f652462ccc4f45da64a164fecf3aa847e749b093d77e6498">EZ_MC</a>, 
+<a class="el" href="ez-draw_8h.html#ad579ac8e9bfa562f6f652462ccc4f45da74ad27365ad1700d3440d6c13cb565ad">EZ_MR</a>, 
+<a class="el" href="ez-draw_8h.html#ad579ac8e9bfa562f6f652462ccc4f45daf76c342d8fbf17fefcdbe4f090aef7f6">EZ_BL</a>, 
+<br />
+&#160;&#160;<a class="el" href="ez-draw_8h.html#ad579ac8e9bfa562f6f652462ccc4f45da73fdbc37301735e616483f4ad526e185">EZ_BC</a>, 
+<a class="el" href="ez-draw_8h.html#ad579ac8e9bfa562f6f652462ccc4f45dacf37612cde4c3ef980b6d5fc1c2991d8">EZ_BR</a>, 
+<a class="el" href="ez-draw_8h.html#ad579ac8e9bfa562f6f652462ccc4f45da7e75320e02b5b61597bca4782efb777d">EZ_BB</a>, 
+<a class="el" href="ez-draw_8h.html#ad579ac8e9bfa562f6f652462ccc4f45da2b63d3747cf46fb6e28dac95594a1222">EZ_TLF</a>, 
+<br />
+&#160;&#160;<a class="el" href="ez-draw_8h.html#ad579ac8e9bfa562f6f652462ccc4f45daf388a7b8ab65f0f7c2fba07504f1824f">EZ_TCF</a>, 
+<a class="el" href="ez-draw_8h.html#ad579ac8e9bfa562f6f652462ccc4f45daf0bbe1ddc4cf2fd1f12cc15971c8e61f">EZ_TRF</a>, 
+<a class="el" href="ez-draw_8h.html#ad579ac8e9bfa562f6f652462ccc4f45da0b1b24fea637a7fb9e4d13bfed0e55a5">EZ_MLF</a>, 
+<a class="el" href="ez-draw_8h.html#ad579ac8e9bfa562f6f652462ccc4f45da43c15354c0078e4e99a446ac50771998">EZ_MCF</a>, 
+<br />
+&#160;&#160;<a class="el" href="ez-draw_8h.html#ad579ac8e9bfa562f6f652462ccc4f45dac7217161ce32c2c635a5a1e3c61b4925">EZ_MRF</a>, 
+<a class="el" href="ez-draw_8h.html#ad579ac8e9bfa562f6f652462ccc4f45da1764d66255067d633ae0c5eeac3b30bb">EZ_BLF</a>, 
+<a class="el" href="ez-draw_8h.html#ad579ac8e9bfa562f6f652462ccc4f45daef7318622a4392c08cd0e12673aa2c92">EZ_BCF</a>, 
+<a class="el" href="ez-draw_8h.html#ad579ac8e9bfa562f6f652462ccc4f45da0aec22d88ef8cee16a9614d0c5757757">EZ_BRF</a>, 
+<br />
+&#160;&#160;<a class="el" href="ez-draw_8h.html#ad579ac8e9bfa562f6f652462ccc4f45daf6d810d623d51fb91b342f3921f1a710">EZ_CC</a>
+<br />
+ }</td></tr>
+<tr class="separator:ad579ac8e9bfa562f6f652462ccc4f45d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf764cbdea00d65edcd07bb9953ad2b7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="ez-draw_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a8c968c1a551b229adc6eead3962f9d3f">WindowClose</a> = LASTEvent+1, 
+<a class="el" href="ez-draw_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a0ee2fa04be587a6394b7cf4bed3efa18">TimerNotify</a>, 
+<a class="el" href="ez-draw_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a3cad19d9e1d62cb3b5373487dd09e4a1">EzLastEvent</a>
+ }</td></tr>
+<tr class="separator:adf764cbdea00d65edcd07bb9953ad2b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:ac1f5cf5ffeb1d3ca14ea61da2927c033"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#ac1f5cf5ffeb1d3ca14ea61da2927c033">ez_init</a> (void)</td></tr>
+<tr class="separator:ac1f5cf5ffeb1d3ca14ea61da2927c033"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef7c9979fe4647aa9eb5eaecefdc2b9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#aef7c9979fe4647aa9eb5eaecefdc2b9c">ez_window_create</a> (int w, int h, const char *name, <a class="el" href="ez-draw_8h.html#aaa79a0a1f889ba3434633bce252eedd7">Ez_func</a> func)</td></tr>
+<tr class="separator:aef7c9979fe4647aa9eb5eaecefdc2b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af596a16d3f0dae4ce04ac8041464bf28"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#af596a16d3f0dae4ce04ac8041464bf28">ez_window_get_id</a> (<a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a> win)</td></tr>
+<tr class="separator:af596a16d3f0dae4ce04ac8041464bf28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ed7b56c9cc96038c60656f66bfe4fb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#a1ed7b56c9cc96038c60656f66bfe4fb6">ez_window_destroy</a> (<a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a> win)</td></tr>
+<tr class="separator:a1ed7b56c9cc96038c60656f66bfe4fb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48d07bb33babf87a707dfef7437cc812"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#a48d07bb33babf87a707dfef7437cc812">ez_window_show</a> (<a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a> win, int val)</td></tr>
+<tr class="separator:a48d07bb33babf87a707dfef7437cc812"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abffc5e9e456b0708d79777f9f74540cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#abffc5e9e456b0708d79777f9f74540cb">ez_window_set_size</a> (<a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a> win, int w, int h)</td></tr>
+<tr class="separator:abffc5e9e456b0708d79777f9f74540cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68856977d6141ea615160d255827bb5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#a68856977d6141ea615160d255827bb5a">ez_window_get_size</a> (<a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a> win, int *w, int *h)</td></tr>
+<tr class="separator:a68856977d6141ea615160d255827bb5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78eb41be11e793b4346f74d163ca7b8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#a78eb41be11e793b4346f74d163ca7b8e">ez_window_clear</a> (<a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a> win)</td></tr>
+<tr class="separator:a78eb41be11e793b4346f74d163ca7b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a521889fdfc6d16858cf3c0b318ccf5f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#a521889fdfc6d16858cf3c0b318ccf5f0">ez_window_dbuf</a> (<a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a> win, int val)</td></tr>
+<tr class="separator:a521889fdfc6d16858cf3c0b318ccf5f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaf84dc8c2296523d7dcac42ffd59fda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#afaf84dc8c2296523d7dcac42ffd59fda">ez_set_data</a> (<a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a> win, void *data)</td></tr>
+<tr class="separator:afaf84dc8c2296523d7dcac42ffd59fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9285acdf2a336fa1e3d86133481750b0"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#a9285acdf2a336fa1e3d86133481750b0">ez_get_data</a> (<a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a> win)</td></tr>
+<tr class="separator:a9285acdf2a336fa1e3d86133481750b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81ef8ae68b4d85b75fa34f8c3ca90c02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#a81ef8ae68b4d85b75fa34f8c3ca90c02">ez_quit</a> (void)</td></tr>
+<tr class="separator:a81ef8ae68b4d85b75fa34f8c3ca90c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a525c972108ebdc217739f5580111d26f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#a525c972108ebdc217739f5580111d26f">ez_auto_quit</a> (int val)</td></tr>
+<tr class="separator:a525c972108ebdc217739f5580111d26f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97a47775da4a68dacfadabe549917e1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#a97a47775da4a68dacfadabe549917e1a">ez_send_expose</a> (<a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a> win)</td></tr>
+<tr class="separator:a97a47775da4a68dacfadabe549917e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb692ce16560e90d136b1b5d704ce360"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#acb692ce16560e90d136b1b5d704ce360">ez_start_timer</a> (<a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a> win, int delay)</td></tr>
+<tr class="separator:acb692ce16560e90d136b1b5d704ce360"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74fb9fdab3965a60f5d49aedd91473c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#a74fb9fdab3965a60f5d49aedd91473c8">ez_main_loop</a> (void)</td></tr>
+<tr class="separator:a74fb9fdab3965a60f5d49aedd91473c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4acb9e9895c68c3c5e7f2642943354c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#a4acb9e9895c68c3c5e7f2642943354c5">ez_random</a> (int n)</td></tr>
+<tr class="separator:a4acb9e9895c68c3c5e7f2642943354c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0830061c0551da396bbd36018046521"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#aa0830061c0551da396bbd36018046521">ez_get_time</a> (void)</td></tr>
+<tr class="separator:aa0830061c0551da396bbd36018046521"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b81df75bb968e050e3662b2cc196014"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ez-draw_8h.html#a55eda5e134b62926942cef0bcc022063">Ez_uint32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#a2b81df75bb968e050e3662b2cc196014">ez_get_grey</a> (<a class="el" href="ez-draw_8h.html#a7178a4c9ce9140f232ce4e4545cd6177">Ez_uint8</a> g)</td></tr>
+<tr class="separator:a2b81df75bb968e050e3662b2cc196014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee3754819d6479afc6cdb7c1d78870b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#aee3754819d6479afc6cdb7c1d78870b4">ez_HSV_to_RGB</a> (double h, double s, double v, <a class="el" href="ez-draw_8h.html#a7178a4c9ce9140f232ce4e4545cd6177">Ez_uint8</a> *r, <a class="el" href="ez-draw_8h.html#a7178a4c9ce9140f232ce4e4545cd6177">Ez_uint8</a> *g, <a class="el" href="ez-draw_8h.html#a7178a4c9ce9140f232ce4e4545cd6177">Ez_uint8</a> *b)</td></tr>
+<tr class="separator:aee3754819d6479afc6cdb7c1d78870b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c6989eb11986193d3abc9a882faf62a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ez-draw_8h.html#a55eda5e134b62926942cef0bcc022063">Ez_uint32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#a3c6989eb11986193d3abc9a882faf62a">ez_get_HSV</a> (double h, double s, double v)</td></tr>
+<tr class="separator:a3c6989eb11986193d3abc9a882faf62a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69c41336f25b66cdecc8c6231ec000e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#a69c41336f25b66cdecc8c6231ec000e6">ez_set_color</a> (<a class="el" href="ez-draw_8h.html#a55eda5e134b62926942cef0bcc022063">Ez_uint32</a> color)</td></tr>
+<tr class="separator:a69c41336f25b66cdecc8c6231ec000e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac434e02a41349c481b49e3cd4713a738"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#ac434e02a41349c481b49e3cd4713a738">ez_set_thick</a> (int thick)</td></tr>
+<tr class="separator:ac434e02a41349c481b49e3cd4713a738"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9cfb2b901c35051a080cbb9fff803b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#ab9cfb2b901c35051a080cbb9fff803b6">ez_draw_point</a> (<a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a> win, int x1, int y1)</td></tr>
+<tr class="separator:ab9cfb2b901c35051a080cbb9fff803b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb1a9044a36705ff631a5db8f5c9b9cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#acb1a9044a36705ff631a5db8f5c9b9cd">ez_draw_line</a> (<a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a> win, int x1, int y1, int x2, int y2)</td></tr>
+<tr class="separator:acb1a9044a36705ff631a5db8f5c9b9cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac295b5713b0a813bc32d5d94ed1f3def"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#ac295b5713b0a813bc32d5d94ed1f3def">ez_draw_rectangle</a> (<a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a> win, int x1, int y1, int x2, int y2)</td></tr>
+<tr class="separator:ac295b5713b0a813bc32d5d94ed1f3def"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04dfebc70e0607dcb611de175805af12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#a04dfebc70e0607dcb611de175805af12">ez_fill_rectangle</a> (<a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a> win, int x1, int y1, int x2, int y2)</td></tr>
+<tr class="separator:a04dfebc70e0607dcb611de175805af12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30ece91bb948a11e7158ab6d0d13bcd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#a30ece91bb948a11e7158ab6d0d13bcd3">ez_draw_triangle</a> (<a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a> win, int x1, int y1, int x2, int y2, int x3, int y3)</td></tr>
+<tr class="separator:a30ece91bb948a11e7158ab6d0d13bcd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0abfe7a33f145fb01986e9f700a902d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#a0abfe7a33f145fb01986e9f700a902d3">ez_fill_triangle</a> (<a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a> win, int x1, int y1, int x2, int y2, int x3, int y3)</td></tr>
+<tr class="separator:a0abfe7a33f145fb01986e9f700a902d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a3f7e9363978dfc65c41795b7a5063a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#a3a3f7e9363978dfc65c41795b7a5063a">ez_draw_circle</a> (<a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a> win, int x1, int y1, int x2, int y2)</td></tr>
+<tr class="separator:a3a3f7e9363978dfc65c41795b7a5063a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac736bd531e6e8053e226a2689a950d0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#ac736bd531e6e8053e226a2689a950d0a">ez_fill_circle</a> (<a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a> win, int x1, int y1, int x2, int y2)</td></tr>
+<tr class="separator:ac736bd531e6e8053e226a2689a950d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefe4203608165eba4afecb6db1709386"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#aefe4203608165eba4afecb6db1709386">ez_font_load</a> (int num, const char *name)</td></tr>
+<tr class="separator:aefe4203608165eba4afecb6db1709386"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8cb2d8fa35492267c41e010955f3054"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#af8cb2d8fa35492267c41e010955f3054">ez_set_nfont</a> (int num)</td></tr>
+<tr class="separator:af8cb2d8fa35492267c41e010955f3054"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0898d8ec9a7f64b7634f22d891e9ec05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#a0898d8ec9a7f64b7634f22d891e9ec05">ez_draw_text</a> (<a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a> win, <a class="el" href="ez-draw_8h.html#ad579ac8e9bfa562f6f652462ccc4f45d">Ez_Align</a> align, int x1, int y1, const char *format,...)</td></tr>
+<tr class="separator:a0898d8ec9a7f64b7634f22d891e9ec05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a63faa99a33ce4c5dcc36c0f25e187231"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ez-draw_8h.html#a55eda5e134b62926942cef0bcc022063">Ez_uint32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#a63faa99a33ce4c5dcc36c0f25e187231">ez_black</a></td></tr>
+<tr class="separator:a63faa99a33ce4c5dcc36c0f25e187231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae5c28cadb239cfedec291e1c889cb29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ez-draw_8h.html#a55eda5e134b62926942cef0bcc022063">Ez_uint32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#aae5c28cadb239cfedec291e1c889cb29">ez_white</a></td></tr>
+<tr class="separator:aae5c28cadb239cfedec291e1c889cb29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1967e3c15536cfc7e26c6cfd0dbbd9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ez-draw_8h.html#a55eda5e134b62926942cef0bcc022063">Ez_uint32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#af1967e3c15536cfc7e26c6cfd0dbbd9b">ez_grey</a></td></tr>
+<tr class="separator:af1967e3c15536cfc7e26c6cfd0dbbd9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e8bec7c49540c9f89592c1654d1c96f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ez-draw_8h.html#a55eda5e134b62926942cef0bcc022063">Ez_uint32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#a5e8bec7c49540c9f89592c1654d1c96f">ez_red</a></td></tr>
+<tr class="separator:a5e8bec7c49540c9f89592c1654d1c96f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9a778c1d1ee6917124f29dbf705ccaf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ez-draw_8h.html#a55eda5e134b62926942cef0bcc022063">Ez_uint32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#ae9a778c1d1ee6917124f29dbf705ccaf">ez_green</a></td></tr>
+<tr class="separator:ae9a778c1d1ee6917124f29dbf705ccaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b84c52a8f4b725d5197499651cfb9f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ez-draw_8h.html#a55eda5e134b62926942cef0bcc022063">Ez_uint32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#a7b84c52a8f4b725d5197499651cfb9f2">ez_blue</a></td></tr>
+<tr class="separator:a7b84c52a8f4b725d5197499651cfb9f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7641eee77e86bf3cc5447e35e4cbc8cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ez-draw_8h.html#a55eda5e134b62926942cef0bcc022063">Ez_uint32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#a7641eee77e86bf3cc5447e35e4cbc8cf">ez_yellow</a></td></tr>
+<tr class="separator:a7641eee77e86bf3cc5447e35e4cbc8cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a5ad49e69ca2af2e41ed4190269bd8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ez-draw_8h.html#a55eda5e134b62926942cef0bcc022063">Ez_uint32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#a7a5ad49e69ca2af2e41ed4190269bd8e">ez_cyan</a></td></tr>
+<tr class="separator:a7a5ad49e69ca2af2e41ed4190269bd8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a9403dd5dcfc9b7b0370cff536e0ab8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ez-draw_8h.html#a55eda5e134b62926942cef0bcc022063">Ez_uint32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#a9a9403dd5dcfc9b7b0370cff536e0ab8">ez_magenta</a></td></tr>
+<tr class="separator:a9a9403dd5dcfc9b7b0370cff536e0ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97a848106e97e219dae4d2b3da716e5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ez-draw_8h.html#a55eda5e134b62926942cef0bcc022063">Ez_uint32</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ez-draw_8h.html#a97a848106e97e219dae4d2b3da716e5f">ez_get_RGB</a> )(<a class="el" href="ez-draw_8h.html#a7178a4c9ce9140f232ce4e4545cd6177">Ez_uint8</a> r, <a class="el" href="ez-draw_8h.html#a7178a4c9ce9140f232ce4e4545cd6177">Ez_uint8</a> g, <a class="el" href="ez-draw_8h.html#a7178a4c9ce9140f232ce4e4545cd6177">Ez_uint8</a> b)</td></tr>
+<tr class="separator:a97a848106e97e219dae4d2b3da716e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des macros</h2>
+<a class="anchor" id="a4e6f3c945f1edd28e8f70401548c854b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EZ_BASE_XLIB&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8h_source.html#l00014">14</a> du fichier <a class="el" href="ez-draw_8h_source.html">ez-draw.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa7d8b778802ee85feebdeb2f048335a6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EZ_FONT_MAX&#160;&#160;&#160;16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8h_source.html#l00056">56</a> du fichier <a class="el" href="ez-draw_8h_source.html">ez-draw.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5a2208666c07190f8d47157b0f194aa6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EZ_ROUND</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;((x)&lt;0 ? (int)((x)-0.5) : (int)((x)+0.5))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8h_source.html#l00070">70</a> du fichier <a class="el" href="ez-draw_8h_source.html">ez-draw.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a319f933f4c8101e13877e4401250bca9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EZ_TIMER_MAX&#160;&#160;&#160;100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8h_source.html#l00101">101</a> du fichier <a class="el" href="ez-draw_8h_source.html">ez-draw.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae4ba09a0328a5f4c5786e4e936f21995"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EZ_WIN_MAX&#160;&#160;&#160;1024</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8h_source.html#l00057">57</a> du fichier <a class="el" href="ez-draw_8h_source.html">ez-draw.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des définitions de type</h2>
+<a class="anchor" id="aaa79a0a1f889ba3434633bce252eedd7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* Ez_func)(<a class="el" href="struct_ez__event.html">Ez_event</a> *ev)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8h_source.html#l00220">220</a> du fichier <a class="el" href="ez-draw_8h_source.html">ez-draw.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6921d0bb91b6b6113e1104900d6f2a2b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef signed short <a class="el" href="ez-draw_8h.html#a6921d0bb91b6b6113e1104900d6f2a2b">Ez_int16</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8h_source.html#l00062">62</a> du fichier <a class="el" href="ez-draw_8h_source.html">ez-draw.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a61a93149c609b66a7848cfa8fbe31a3c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef signed int <a class="el" href="ez-draw_8h.html#a61a93149c609b66a7848cfa8fbe31a3c">Ez_int32</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8h_source.html#l00064">64</a> du fichier <a class="el" href="ez-draw_8h_source.html">ez-draw.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a69aa9e57b7b195a7fa9f88d62a466014"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef signed char <a class="el" href="ez-draw_8h.html#a69aa9e57b7b195a7fa9f88d62a466014">Ez_int8</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8h_source.html#l00059">59</a> du fichier <a class="el" href="ez-draw_8h_source.html">ez-draw.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adbac932ce4c32d1da99811bd99fb3709"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned int <a class="el" href="ez-draw_8h.html#adbac932ce4c32d1da99811bd99fb3709">Ez_uint</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8h_source.html#l00065">65</a> du fichier <a class="el" href="ez-draw_8h_source.html">ez-draw.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a62118f08b0017c090df6bc21a2bf38ee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned short <a class="el" href="ez-draw_8h.html#a62118f08b0017c090df6bc21a2bf38ee">Ez_uint16</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8h_source.html#l00061">61</a> du fichier <a class="el" href="ez-draw_8h_source.html">ez-draw.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a55eda5e134b62926942cef0bcc022063"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned int <a class="el" href="ez-draw_8h.html#a55eda5e134b62926942cef0bcc022063">Ez_uint32</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8h_source.html#l00063">63</a> du fichier <a class="el" href="ez-draw_8h_source.html">ez-draw.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7178a4c9ce9140f232ce4e4545cd6177"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned char <a class="el" href="ez-draw_8h.html#a7178a4c9ce9140f232ce4e4545cd6177">Ez_uint8</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8h_source.html#l00060">60</a> du fichier <a class="el" href="ez-draw_8h_source.html">ez-draw.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad3d2691b1c889aecded4aaa148a045b9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="ez-draw_8h.html#a7178a4c9ce9140f232ce4e4545cd6177">Ez_uint8</a> Ez_validate_uint32[sizeof(<a class="el" href="ez-draw_8h.html#a55eda5e134b62926942cef0bcc022063">Ez_uint32</a>)==4?1:-1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8h_source.html#l00068">68</a> du fichier <a class="el" href="ez-draw_8h_source.html">ez-draw.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a72f9ccbcb00f67f8fd4644514c50de34"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Window <a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8h_source.html#l00074">74</a> du fichier <a class="el" href="ez-draw_8h_source.html">ez-draw.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation du type de l'énumération</h2>
+<a class="anchor" id="adf764cbdea00d65edcd07bb9953ad2b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a class="anchor" id="adf764cbdea00d65edcd07bb9953ad2b7a8c968c1a551b229adc6eead3962f9d3f"></a>WindowClose&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adf764cbdea00d65edcd07bb9953ad2b7a0ee2fa04be587a6394b7cf4bed3efa18"></a>TimerNotify&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adf764cbdea00d65edcd07bb9953ad2b7a3cad19d9e1d62cb3b5373487dd09e4a1"></a>EzLastEvent&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8h_source.html#l00203">203</a> du fichier <a class="el" href="ez-draw_8h_source.html">ez-draw.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad579ac8e9bfa562f6f652462ccc4f45d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="ez-draw_8h.html#ad579ac8e9bfa562f6f652462ccc4f45d">Ez_Align</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a class="anchor" id="ad579ac8e9bfa562f6f652462ccc4f45dad3cb07e30cb20add61c0f4c5fa37be71"></a>EZ_AA&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad579ac8e9bfa562f6f652462ccc4f45da3c9db5ecb68093619650ca4e6df6efff"></a>EZ_TL&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad579ac8e9bfa562f6f652462ccc4f45dac9a0b270fcc4177ee50af2dea1cc9000"></a>EZ_TC&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad579ac8e9bfa562f6f652462ccc4f45dad9984e5822db8b63f0cce2a553eb2b25"></a>EZ_TR&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad579ac8e9bfa562f6f652462ccc4f45da37c6986d24eb7d1f64df51f33e9ec6a9"></a>EZ_ML&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad579ac8e9bfa562f6f652462ccc4f45da64a164fecf3aa847e749b093d77e6498"></a>EZ_MC&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad579ac8e9bfa562f6f652462ccc4f45da74ad27365ad1700d3440d6c13cb565ad"></a>EZ_MR&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad579ac8e9bfa562f6f652462ccc4f45daf76c342d8fbf17fefcdbe4f090aef7f6"></a>EZ_BL&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad579ac8e9bfa562f6f652462ccc4f45da73fdbc37301735e616483f4ad526e185"></a>EZ_BC&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad579ac8e9bfa562f6f652462ccc4f45dacf37612cde4c3ef980b6d5fc1c2991d8"></a>EZ_BR&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad579ac8e9bfa562f6f652462ccc4f45da7e75320e02b5b61597bca4782efb777d"></a>EZ_BB&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad579ac8e9bfa562f6f652462ccc4f45da2b63d3747cf46fb6e28dac95594a1222"></a>EZ_TLF&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad579ac8e9bfa562f6f652462ccc4f45daf388a7b8ab65f0f7c2fba07504f1824f"></a>EZ_TCF&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad579ac8e9bfa562f6f652462ccc4f45daf0bbe1ddc4cf2fd1f12cc15971c8e61f"></a>EZ_TRF&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad579ac8e9bfa562f6f652462ccc4f45da0b1b24fea637a7fb9e4d13bfed0e55a5"></a>EZ_MLF&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad579ac8e9bfa562f6f652462ccc4f45da43c15354c0078e4e99a446ac50771998"></a>EZ_MCF&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad579ac8e9bfa562f6f652462ccc4f45dac7217161ce32c2c635a5a1e3c61b4925"></a>EZ_MRF&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad579ac8e9bfa562f6f652462ccc4f45da1764d66255067d633ae0c5eeac3b30bb"></a>EZ_BLF&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad579ac8e9bfa562f6f652462ccc4f45daef7318622a4392c08cd0e12673aa2c92"></a>EZ_BCF&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad579ac8e9bfa562f6f652462ccc4f45da0aec22d88ef8cee16a9614d0c5757757"></a>EZ_BRF&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad579ac8e9bfa562f6f652462ccc4f45daf6d810d623d51fb91b342f3921f1a710"></a>EZ_CC&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8h_source.html#l00109">109</a> du fichier <a class="el" href="ez-draw_8h_source.html">ez-draw.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a class="anchor" id="a525c972108ebdc217739f5580111d26f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ez_auto_quit </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00476">476</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3a3f7e9363978dfc65c41795b7a5063a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ez_draw_circle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a>&#160;</td>
+          <td class="paramname"><em>win</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00809">809</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acb1a9044a36705ff631a5db8f5c9b9cd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ez_draw_line </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a>&#160;</td>
+          <td class="paramname"><em>win</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00728">728</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab9cfb2b901c35051a080cbb9fff803b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ez_draw_point </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a>&#160;</td>
+          <td class="paramname"><em>win</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00713">713</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac295b5713b0a813bc32d5d94ed1f3def"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ez_draw_rectangle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a>&#160;</td>
+          <td class="paramname"><em>win</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00741">741</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0898d8ec9a7f64b7634f22d891e9ec05"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ez_draw_text </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a>&#160;</td>
+          <td class="paramname"><em>win</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ez-draw_8h.html#ad579ac8e9bfa562f6f652462ccc4f45d">Ez_Align</a>&#160;</td>
+          <td class="paramname"><em>align</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00929">929</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a30ece91bb948a11e7158ab6d0d13bcd3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ez_draw_triangle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a>&#160;</td>
+          <td class="paramname"><em>win</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y3</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00773">773</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac736bd531e6e8053e226a2689a950d0a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ez_fill_circle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a>&#160;</td>
+          <td class="paramname"><em>win</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00824">824</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a04dfebc70e0607dcb611de175805af12"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ez_fill_rectangle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a>&#160;</td>
+          <td class="paramname"><em>win</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00757">757</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0abfe7a33f145fb01986e9f700a902d3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ez_fill_triangle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a>&#160;</td>
+          <td class="paramname"><em>win</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y3</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00789">789</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aefe4203608165eba4afecb6db1709386"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ez_font_load </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00850">850</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9285acdf2a336fa1e3d86133481750b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* ez_get_data </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a>&#160;</td>
+          <td class="paramname"><em>win</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00446">446</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2b81df75bb968e050e3662b2cc196014"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ez-draw_8h.html#a55eda5e134b62926942cef0bcc022063">Ez_uint32</a> ez_get_grey </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ez-draw_8h.html#a7178a4c9ce9140f232ce4e4545cd6177">Ez_uint8</a>&#160;</td>
+          <td class="paramname"><em>g</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00614">614</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3c6989eb11986193d3abc9a882faf62a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ez-draw_8h.html#a55eda5e134b62926942cef0bcc022063">Ez_uint32</a> ez_get_HSV </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00648">648</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa0830061c0551da396bbd36018046521"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ez_get_time </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00590">590</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aee3754819d6479afc6cdb7c1d78870b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ez_HSV_to_RGB </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ez-draw_8h.html#a7178a4c9ce9140f232ce4e4545cd6177">Ez_uint8</a> *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ez-draw_8h.html#a7178a4c9ce9140f232ce4e4545cd6177">Ez_uint8</a> *&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ez-draw_8h.html#a7178a4c9ce9140f232ce4e4545cd6177">Ez_uint8</a> *&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00625">625</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac1f5cf5ffeb1d3ca14ea61da2927c033"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ez_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00034">34</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a74fb9fdab3965a60f5d49aedd91473c8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ez_main_loop </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00531">531</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a81ef8ae68b4d85b75fa34f8c3ca90c02"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ez_quit </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00458">458</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4acb9e9895c68c3c5e7f2642943354c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ez_random </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00576">576</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a97a47775da4a68dacfadabe549917e1a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ez_send_expose </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a>&#160;</td>
+          <td class="paramname"><em>win</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00486">486</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a69c41336f25b66cdecc8c6231ec000e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ez_set_color </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ez-draw_8h.html#a55eda5e134b62926942cef0bcc022063">Ez_uint32</a>&#160;</td>
+          <td class="paramname"><em>color</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00661">661</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afaf84dc8c2296523d7dcac42ffd59fda"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ez_set_data </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a>&#160;</td>
+          <td class="paramname"><em>win</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00434">434</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af8cb2d8fa35492267c41e010955f3054"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ez_set_nfont </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00898">898</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac434e02a41349c481b49e3cd4713a738"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ez_set_thick </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>thick</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00692">692</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acb692ce16560e90d136b1b5d704ce360"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ez_start_timer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a>&#160;</td>
+          <td class="paramname"><em>win</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>delay</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00512">512</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a78eb41be11e793b4346f74d163ca7b8e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ez_window_clear </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a>&#160;</td>
+          <td class="paramname"><em>win</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00382">382</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aef7c9979fe4647aa9eb5eaecefdc2b9c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a> ez_window_create </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ez-draw_8h.html#aaa79a0a1f889ba3434633bce252eedd7">Ez_func</a>&#160;</td>
+          <td class="paramname"><em>func</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00163">163</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a521889fdfc6d16858cf3c0b318ccf5f0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ez_window_dbuf </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a>&#160;</td>
+          <td class="paramname"><em>win</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00399">399</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1ed7b56c9cc96038c60656f66bfe4fb6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ez_window_destroy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a>&#160;</td>
+          <td class="paramname"><em>win</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00272">272</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af596a16d3f0dae4ce04ac8041464bf28"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ez_window_get_id </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a>&#160;</td>
+          <td class="paramname"><em>win</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00258">258</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a68856977d6141ea615160d255827bb5a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ez_window_get_size </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a>&#160;</td>
+          <td class="paramname"><em>win</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>h</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00345">345</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abffc5e9e456b0708d79777f9f74540cb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ez_window_set_size </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a>&#160;</td>
+          <td class="paramname"><em>win</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00322">322</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a48d07bb33babf87a707dfef7437cc812"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ez_window_show </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a>&#160;</td>
+          <td class="paramname"><em>win</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00289">289</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des variables</h2>
+<a class="anchor" id="a63faa99a33ce4c5dcc36c0f25e187231"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ez-draw_8h.html#a55eda5e134b62926942cef0bcc022063">Ez_uint32</a> ez_black</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00023">23</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7b84c52a8f4b725d5197499651cfb9f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ez-draw_8h.html#a55eda5e134b62926942cef0bcc022063">Ez_uint32</a> ez_blue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00023">23</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7a5ad49e69ca2af2e41ed4190269bd8e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ez-draw_8h.html#a55eda5e134b62926942cef0bcc022063">Ez_uint32</a> ez_cyan</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00023">23</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a97a848106e97e219dae4d2b3da716e5f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ez-draw_8h.html#a55eda5e134b62926942cef0bcc022063">Ez_uint32</a>(* ez_get_RGB)(<a class="el" href="ez-draw_8h.html#a7178a4c9ce9140f232ce4e4545cd6177">Ez_uint8</a> r, <a class="el" href="ez-draw_8h.html#a7178a4c9ce9140f232ce4e4545cd6177">Ez_uint8</a> g, <a class="el" href="ez-draw_8h.html#a7178a4c9ce9140f232ce4e4545cd6177">Ez_uint8</a> b)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8h_source.html#l00252">252</a> du fichier <a class="el" href="ez-draw_8h_source.html">ez-draw.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae9a778c1d1ee6917124f29dbf705ccaf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ez-draw_8h.html#a55eda5e134b62926942cef0bcc022063">Ez_uint32</a> ez_green</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00023">23</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af1967e3c15536cfc7e26c6cfd0dbbd9b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ez-draw_8h.html#a55eda5e134b62926942cef0bcc022063">Ez_uint32</a> ez_grey</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00023">23</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9a9403dd5dcfc9b7b0370cff536e0ab8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ez-draw_8h.html#a55eda5e134b62926942cef0bcc022063">Ez_uint32</a> ez_magenta</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00023">23</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5e8bec7c49540c9f89592c1654d1c96f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ez-draw_8h.html#a55eda5e134b62926942cef0bcc022063">Ez_uint32</a> ez_red</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00023">23</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aae5c28cadb239cfedec291e1c889cb29"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ez-draw_8h.html#a55eda5e134b62926942cef0bcc022063">Ez_uint32</a> ez_white</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00023">23</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7641eee77e86bf3cc5447e35e4cbc8cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ez-draw_8h.html#a55eda5e134b62926942cef0bcc022063">Ez_uint32</a> ez_yellow</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="ez-draw_8c_source.html#l00023">23</a> du fichier <a class="el" href="ez-draw_8c_source.html">ez-draw.c</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Vendredi 27 Mai 2016 07:12:35 pour My Project par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>

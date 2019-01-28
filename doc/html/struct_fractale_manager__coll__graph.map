@@ -1,0 +1,14 @@
+<map id="FractaleManager" name="FractaleManager">
+<area shape="rect" id="node2" href="$struct_sauvegarde.html" title="Sauvegarde" alt="" coords="160,288,251,315"/>
+<area shape="rect" id="node3" href="$struct_koch.html" title="Koch" alt="" coords="71,199,123,225"/>
+<area shape="rect" id="node4" href="$struct_e_p_o_i_n_t.html" title="EPOINT" alt="" coords="5,95,77,121"/>
+<area shape="rect" id="node5" href="$struct_mandelbrot.html" title="Mandelbrot" alt="" coords="195,199,282,225"/>
+<area shape="rect" id="node6" href="$struct_c_o_m_p_l_e_x_e.html" title="COMPLEXE" alt="" coords="155,95,251,121"/>
+<area shape="rect" id="node7" href="$struct_image.html" title="Image" alt="" coords="275,95,333,121"/>
+<area shape="rect" id="node8" href="$struct_pixel.html" title="Pixel" alt="" coords="279,5,329,32"/>
+<area shape="rect" id="node9" href="$struct_menu.html" title="Menu" alt="" coords="422,288,477,315"/>
+<area shape="rect" id="node10" href="$struct_liste_choix.html" title="ListeChoix" alt="" coords="345,199,429,225"/>
+<area shape="rect" id="node11" href="$struct_item_option.html" title="ItemOption" alt="" coords="358,95,445,121"/>
+<area shape="rect" id="node12" href="$struct_jauge.html" title="Jauge" alt="" coords="455,199,513,225"/>
+<area shape="rect" id="node13" href="$struct_bouton.html" title="Bouton" alt="" coords="537,199,599,225"/>
+</map>

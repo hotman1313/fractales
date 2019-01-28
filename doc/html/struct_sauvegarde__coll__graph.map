@@ -1,0 +1,8 @@
+<map id="Sauvegarde" name="Sauvegarde">
+<area shape="rect" id="node2" href="$struct_koch.html" title="Koch" alt="" coords="66,199,118,225"/>
+<area shape="rect" id="node3" href="$struct_e_p_o_i_n_t.html" title="EPOINT" alt="" coords="5,95,77,121"/>
+<area shape="rect" id="node4" href="$struct_mandelbrot.html" title="Mandelbrot" alt="" coords="159,199,246,225"/>
+<area shape="rect" id="node5" href="$struct_c_o_m_p_l_e_x_e.html" title="COMPLEXE" alt="" coords="155,95,251,121"/>
+<area shape="rect" id="node6" href="$struct_image.html" title="Image" alt="" coords="275,95,333,121"/>
+<area shape="rect" id="node7" href="$struct_pixel.html" title="Pixel" alt="" coords="279,5,329,32"/>
+</map>

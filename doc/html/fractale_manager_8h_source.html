@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>My Project:  Fichier source de fractaleManager.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="82065865_o.jpg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">fractaleManager.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="fractale_manager_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef __fractalemanager__</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define __fractalemanager__</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ez-draw_8h.html">ez-draw.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="koch_8h.html">koch.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mandelbrot_8h.html">mandelbrot.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="sauvegarde_8h.html">sauvegarde.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="menu_8h.html">menu.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="fractale_manager_8h.html#a37433b272dc1e4aac2f5abea6c27038f">   20</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_fractale_manager.html">FractaleManager</a> <a class="code" href="struct_fractale_manager.html">FractaleManager</a>; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="struct_fractale_manager.html">   22</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_fractale_manager.html">FractaleManager</a> {</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="struct_fractale_manager.html#ae3153475699d63d320933a7c6aa67363">   23</a></span>&#160;    <a class="code" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a> <a class="code" href="struct_fractale_manager.html#ae3153475699d63d320933a7c6aa67363">fenetreMenu</a>; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="struct_fractale_manager.html#aa4d780c119c98ed994ef1891311443c9">   24</a></span>&#160;    <a class="code" href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a> <a class="code" href="struct_fractale_manager.html#aa4d780c119c98ed994ef1891311443c9">fenetreFractale</a>; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="struct_fractale_manager.html#af0e3e724aca8c06ae818637170488513">   25</a></span>&#160;    <a class="code" href="struct_koch.html">Koch</a> *<a class="code" href="struct_fractale_manager.html#af0e3e724aca8c06ae818637170488513">koch</a>; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="struct_fractale_manager.html#a43d97b04f2ddaf2716df42b470c9b011">   26</a></span>&#160;    <a class="code" href="struct_mandelbrot.html">Mandelbrot</a> *<a class="code" href="struct_fractale_manager.html#a43d97b04f2ddaf2716df42b470c9b011">mandelbrot</a>; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="struct_fractale_manager.html#a7bae58a2b8afd3bf624d516ffbfff964">   27</a></span>&#160;    <a class="code" href="struct_sauvegarde.html">Sauvegarde</a> *<a class="code" href="struct_fractale_manager.html#a7bae58a2b8afd3bf624d516ffbfff964">sauvegarde</a>; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="struct_fractale_manager.html#a90a5af8e42d13d2bd3c97272111189ff">   28</a></span>&#160;    <a class="code" href="struct_menu.html">Menu</a> *<a class="code" href="struct_fractale_manager.html#a90a5af8e42d13d2bd3c97272111189ff">menuGraphique</a>; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="struct_fractale_manager.html#af7b76de3183311935e120b324e4795c6">   29</a></span>&#160;    <a class="code" href="ez-draw_8h.html#a55eda5e134b62926942cef0bcc022063">Ez_uint32</a> <a class="code" href="struct_fractale_manager.html#af7b76de3183311935e120b324e4795c6">tabPixRGBFenFractale</a>[600][600]; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<a class="code" href="struct_fractale_manager.html">FractaleManager</a> *<a class="code" href="fractale_manager_8h.html#a0266c18bc71bfd765a636aa5fc751754">creerManager</a>(<a class="code" href="struct_menu.html">Menu</a> *menu, <a class="code" href="struct_sauvegarde.html">Sauvegarde</a> *sauvegarde);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">void</span> <a class="code" href="fractale_manager_8h.html#ac513064a3fc9d0a60b38eda4fb098cca">remplirMapPixels</a>(<a class="code" href="struct_fractale_manager.html">FractaleManager</a> *<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">void</span> <a class="code" href="fractale_manager_8h.html#a1b4d188ac9434d2b1d97ab5f3a4e6735">winMenu_on_expose</a>(<a class="code" href="struct_ez__event.html">Ez_event</a> *ev);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keywordtype">void</span> <a class="code" href="fractale_manager_8h.html#a917f467b01478d5dcc6f46d1970f0752">winMenu_on_buttonPress</a>(<a class="code" href="struct_ez__event.html">Ez_event</a> *ev);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">void</span> <a class="code" href="fractale_manager_8h.html#ac4fdd810046070a129b9ef721a321987">winMenu_on_buttonRelease</a>(<a class="code" href="struct_ez__event.html">Ez_event</a> *ev);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">void</span> <a class="code" href="fractale_manager_8h.html#a888b4e2b4f6cbe592080665acad36920">winMenu_event</a>(<a class="code" href="struct_ez__event.html">Ez_event</a> *ev);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keywordtype">void</span> <a class="code" href="fractale_manager_8h.html#a0c00f903a142b3f333b8350a77dc4d68">winFractale_on_expose</a>(<a class="code" href="struct_ez__event.html">Ez_event</a> *ev);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">//void win1_on_configure_notify (Ez_event *ev);</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keywordtype">void</span> <a class="code" href="fractale_manager_8h.html#a800c70cacad3024e128b112a12dc41b7">winFractale_on_buttonPress</a>(<a class="code" href="struct_ez__event.html">Ez_event</a> *ev);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keywordtype">void</span> <a class="code" href="fractale_manager_8h.html#a492fadbb302d3591ef172172cc080bdc">winFractale_on_timerNotify</a>(<a class="code" href="struct_ez__event.html">Ez_event</a> *ev);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keywordtype">void</span> <a class="code" href="fractale_manager_8h.html#a00e632f2b39113ae956cb241f9d947d7">winFractale_event</a>(<a class="code" href="struct_ez__event.html">Ez_event</a> *ev);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="fractale_manager_8h_html_a888b4e2b4f6cbe592080665acad36920"><div class="ttname"><a href="fractale_manager_8h.html#a888b4e2b4f6cbe592080665acad36920">winMenu_event</a></div><div class="ttdeci">void winMenu_event(Ez_event *ev)</div><div class="ttdoc">Association evenement -> foncion sur la fenêtre du menu. </div><div class="ttdef"><b>Definition:</b> <a href="fractale_manager_8c_source.html#l00354">fractaleManager.c:354</a></div></div>
+<div class="ttc" id="koch_8h_html"><div class="ttname"><a href="koch_8h.html">koch.h</a></div></div>
+<div class="ttc" id="fractale_manager_8h_html_ac4fdd810046070a129b9ef721a321987"><div class="ttname"><a href="fractale_manager_8h.html#ac4fdd810046070a129b9ef721a321987">winMenu_on_buttonRelease</a></div><div class="ttdeci">void winMenu_on_buttonRelease(Ez_event *ev)</div><div class="ttdoc">Action suite au relâchement souris sur la fenêtre du menu. </div><div class="ttdef"><b>Definition:</b> <a href="fractale_manager_8c_source.html#l00172">fractaleManager.c:172</a></div></div>
+<div class="ttc" id="struct_fractale_manager_html_ae3153475699d63d320933a7c6aa67363"><div class="ttname"><a href="struct_fractale_manager.html#ae3153475699d63d320933a7c6aa67363">FractaleManager::fenetreMenu</a></div><div class="ttdeci">Ez_window fenetreMenu</div><div class="ttdef"><b>Definition:</b> <a href="fractale_manager_8h_source.html#l00023">fractaleManager.h:23</a></div></div>
+<div class="ttc" id="struct_fractale_manager_html_aa4d780c119c98ed994ef1891311443c9"><div class="ttname"><a href="struct_fractale_manager.html#aa4d780c119c98ed994ef1891311443c9">FractaleManager::fenetreFractale</a></div><div class="ttdeci">Ez_window fenetreFractale</div><div class="ttdef"><b>Definition:</b> <a href="fractale_manager_8h_source.html#l00024">fractaleManager.h:24</a></div></div>
+<div class="ttc" id="struct_fractale_manager_html_a43d97b04f2ddaf2716df42b470c9b011"><div class="ttname"><a href="struct_fractale_manager.html#a43d97b04f2ddaf2716df42b470c9b011">FractaleManager::mandelbrot</a></div><div class="ttdeci">Mandelbrot * mandelbrot</div><div class="ttdef"><b>Definition:</b> <a href="fractale_manager_8h_source.html#l00026">fractaleManager.h:26</a></div></div>
+<div class="ttc" id="sauvegarde_8h_html"><div class="ttname"><a href="sauvegarde_8h.html">sauvegarde.h</a></div></div>
+<div class="ttc" id="struct_menu_html"><div class="ttname"><a href="struct_menu.html">Menu</a></div><div class="ttdef"><b>Definition:</b> <a href="menu_8h_source.html#l00019">menu.h:19</a></div></div>
+<div class="ttc" id="mandelbrot_8h_html"><div class="ttname"><a href="mandelbrot_8h.html">mandelbrot.h</a></div></div>
+<div class="ttc" id="fractale_manager_8h_html_a1b4d188ac9434d2b1d97ab5f3a4e6735"><div class="ttname"><a href="fractale_manager_8h.html#a1b4d188ac9434d2b1d97ab5f3a4e6735">winMenu_on_expose</a></div><div class="ttdeci">void winMenu_on_expose(Ez_event *ev)</div><div class="ttdoc">Affichage de la fenêtre du menu. </div><div class="ttdef"><b>Definition:</b> <a href="fractale_manager_8c_source.html#l00075">fractaleManager.c:75</a></div></div>
+<div class="ttc" id="struct_fractale_manager_html_af0e3e724aca8c06ae818637170488513"><div class="ttname"><a href="struct_fractale_manager.html#af0e3e724aca8c06ae818637170488513">FractaleManager::koch</a></div><div class="ttdeci">Koch * koch</div><div class="ttdef"><b>Definition:</b> <a href="fractale_manager_8h_source.html#l00025">fractaleManager.h:25</a></div></div>
+<div class="ttc" id="fractale_manager_8h_html_a0c00f903a142b3f333b8350a77dc4d68"><div class="ttname"><a href="fractale_manager_8h.html#a0c00f903a142b3f333b8350a77dc4d68">winFractale_on_expose</a></div><div class="ttdeci">void winFractale_on_expose(Ez_event *ev)</div><div class="ttdoc">Affichage de la fenêtre de la fractale. </div><div class="ttdef"><b>Definition:</b> <a href="fractale_manager_8c_source.html#l00367">fractaleManager.c:367</a></div></div>
+<div class="ttc" id="struct_fractale_manager_html_a7bae58a2b8afd3bf624d516ffbfff964"><div class="ttname"><a href="struct_fractale_manager.html#a7bae58a2b8afd3bf624d516ffbfff964">FractaleManager::sauvegarde</a></div><div class="ttdeci">Sauvegarde * sauvegarde</div><div class="ttdef"><b>Definition:</b> <a href="fractale_manager_8h_source.html#l00027">fractaleManager.h:27</a></div></div>
+<div class="ttc" id="fractale_manager_8h_html_a917f467b01478d5dcc6f46d1970f0752"><div class="ttname"><a href="fractale_manager_8h.html#a917f467b01478d5dcc6f46d1970f0752">winMenu_on_buttonPress</a></div><div class="ttdeci">void winMenu_on_buttonPress(Ez_event *ev)</div><div class="ttdoc">Action suite au clique souris sur la fenêtre du menu. </div><div class="ttdef"><b>Definition:</b> <a href="fractale_manager_8c_source.html#l00111">fractaleManager.c:111</a></div></div>
+<div class="ttc" id="ez-draw_8h_html"><div class="ttname"><a href="ez-draw_8h.html">ez-draw.h</a></div></div>
+<div class="ttc" id="fractale_manager_8h_html_a800c70cacad3024e128b112a12dc41b7"><div class="ttname"><a href="fractale_manager_8h.html#a800c70cacad3024e128b112a12dc41b7">winFractale_on_buttonPress</a></div><div class="ttdeci">void winFractale_on_buttonPress(Ez_event *ev)</div><div class="ttdoc">Action suite au clique souris sur la fenêtre de la fractale. </div></div>
+<div class="ttc" id="struct_koch_html"><div class="ttname"><a href="struct_koch.html">Koch</a></div><div class="ttdef"><b>Definition:</b> <a href="koch_8h_source.html#l00019">koch.h:19</a></div></div>
+<div class="ttc" id="fractale_manager_8h_html_a492fadbb302d3591ef172172cc080bdc"><div class="ttname"><a href="fractale_manager_8h.html#a492fadbb302d3591ef172172cc080bdc">winFractale_on_timerNotify</a></div><div class="ttdeci">void winFractale_on_timerNotify(Ez_event *ev)</div><div class="ttdoc">Action suite à l&#39;arrivée du terme du timer sur la fenêtre de la fractale. </div><div class="ttdef"><b>Definition:</b> <a href="fractale_manager_8c_source.html#l00421">fractaleManager.c:421</a></div></div>
+<div class="ttc" id="struct_mandelbrot_html"><div class="ttname"><a href="struct_mandelbrot.html">Mandelbrot</a></div><div class="ttdef"><b>Definition:</b> <a href="mandelbrot_8h_source.html#l00019">mandelbrot.h:19</a></div></div>
+<div class="ttc" id="struct_fractale_manager_html"><div class="ttname"><a href="struct_fractale_manager.html">FractaleManager</a></div><div class="ttdef"><b>Definition:</b> <a href="fractale_manager_8h_source.html#l00022">fractaleManager.h:22</a></div></div>
+<div class="ttc" id="struct_fractale_manager_html_a90a5af8e42d13d2bd3c97272111189ff"><div class="ttname"><a href="struct_fractale_manager.html#a90a5af8e42d13d2bd3c97272111189ff">FractaleManager::menuGraphique</a></div><div class="ttdeci">Menu * menuGraphique</div><div class="ttdef"><b>Definition:</b> <a href="fractale_manager_8h_source.html#l00028">fractaleManager.h:28</a></div></div>
+<div class="ttc" id="struct_sauvegarde_html"><div class="ttname"><a href="struct_sauvegarde.html">Sauvegarde</a></div><div class="ttdef"><b>Definition:</b> <a href="sauvegarde_8h_source.html#l00018">sauvegarde.h:18</a></div></div>
+<div class="ttc" id="struct_ez__event_html"><div class="ttname"><a href="struct_ez__event.html">Ez_event</a></div><div class="ttdef"><b>Definition:</b> <a href="ez-draw_8h_source.html#l00206">ez-draw.h:206</a></div></div>
+<div class="ttc" id="ez-draw_8h_html_a72f9ccbcb00f67f8fd4644514c50de34"><div class="ttname"><a href="ez-draw_8h.html#a72f9ccbcb00f67f8fd4644514c50de34">Ez_window</a></div><div class="ttdeci">Window Ez_window</div><div class="ttdef"><b>Definition:</b> <a href="ez-draw_8h_source.html#l00074">ez-draw.h:74</a></div></div>
+<div class="ttc" id="ez-draw_8h_html_a55eda5e134b62926942cef0bcc022063"><div class="ttname"><a href="ez-draw_8h.html#a55eda5e134b62926942cef0bcc022063">Ez_uint32</a></div><div class="ttdeci">unsigned int Ez_uint32</div><div class="ttdef"><b>Definition:</b> <a href="ez-draw_8h_source.html#l00063">ez-draw.h:63</a></div></div>
+<div class="ttc" id="fractale_manager_8h_html_ac513064a3fc9d0a60b38eda4fb098cca"><div class="ttname"><a href="fractale_manager_8h.html#ac513064a3fc9d0a60b38eda4fb098cca">remplirMapPixels</a></div><div class="ttdeci">void remplirMapPixels(FractaleManager *this)</div><div class="ttdoc">Remplit la matrice de points de l&#39;image. </div><div class="ttdef"><b>Definition:</b> <a href="fractale_manager_8c_source.html#l00038">fractaleManager.c:38</a></div></div>
+<div class="ttc" id="menu_8h_html"><div class="ttname"><a href="menu_8h.html">menu.h</a></div></div>
+<div class="ttc" id="fractale_manager_8h_html_a0266c18bc71bfd765a636aa5fc751754"><div class="ttname"><a href="fractale_manager_8h.html#a0266c18bc71bfd765a636aa5fc751754">creerManager</a></div><div class="ttdeci">FractaleManager * creerManager(Menu *menu, Sauvegarde *sauvegarde)</div><div class="ttdoc">Intialise le manager. </div><div class="ttdef"><b>Definition:</b> <a href="fractale_manager_8c_source.html#l00017">fractaleManager.c:17</a></div></div>
+<div class="ttc" id="fractale_manager_8h_html_a00e632f2b39113ae956cb241f9d947d7"><div class="ttname"><a href="fractale_manager_8h.html#a00e632f2b39113ae956cb241f9d947d7">winFractale_event</a></div><div class="ttdeci">void winFractale_event(Ez_event *ev)</div><div class="ttdoc">Association evenement -> foncion sur la fenêtre de la fractale. </div><div class="ttdef"><b>Definition:</b> <a href="fractale_manager_8c_source.html#l00446">fractaleManager.c:446</a></div></div>
+<div class="ttc" id="struct_fractale_manager_html_af7b76de3183311935e120b324e4795c6"><div class="ttname"><a href="struct_fractale_manager.html#af7b76de3183311935e120b324e4795c6">FractaleManager::tabPixRGBFenFractale</a></div><div class="ttdeci">Ez_uint32 tabPixRGBFenFractale[600][600]</div><div class="ttdef"><b>Definition:</b> <a href="fractale_manager_8h_source.html#l00029">fractaleManager.h:29</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Vendredi 27 Mai 2016 07:12:35 pour My Project par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>
