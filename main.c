@@ -1,6 +1,8 @@
 #include "fractaleManager.h"
 #include "zoom.h"
-
+/**
+ * 
+ */
 
 /**
  * \brief fonction qui initalise toutes les stuctures
